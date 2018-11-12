@@ -36,7 +36,7 @@ class Welcome extends CI_Controller {
 		$mail = strip_tags($this->input->post('mail'));
 		$phone = strip_tags($this->input->post('phone'));
 		$message =strip_tags( $this->input->post('message'));
-		if (filter_var($mail,FILTER_VALIDATE_EMAIL)) {
+		if (filter_var($mail,FILTER_VALIDATE_EMAIL == true)) {
 			$this->main_model-> Add_Message_Contact($name,$mail,$phone,$message);
 			$this->load->view('');
 		}else{
@@ -50,7 +50,11 @@ class Welcome extends CI_Controller {
 		$mail_user = strip_tags($this->input->post('mail'));
 		$mumber_user = strip_tags($this->input->post('phone'));
 		$data_accepte =strip_tags( $this->input->post('date'));
-		//ICI REQUETE BASE DE DONNEES
+		if (filter_var($mail_user,FILTER_VALIDATE_EMAIL == true)) {
+			
+		}else{
+			$this->load->view('');
+		}
 	}
 
 }
