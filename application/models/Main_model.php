@@ -29,6 +29,14 @@
             return $this->db->insert($this->table_contact);
         }
 
+        public function Add_User_adhere($name,$mail,$phone,$message){
+
+            $this->db->set('',$name);
+            $this->db->set('',$mail);
+            $this->db->set('',$phone);
+            $this->db->set('',$message);
+            return $this->db->insert($this->table_contact);
+        }
 
 
         public function Add_Applixcation($titre,$description,$file){
