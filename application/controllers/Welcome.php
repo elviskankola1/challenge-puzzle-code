@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Welcome extends CI_Controller {
 
 	public function index(){
+
 		$this->load->view('index');
 	}
 //=========================================================================================================
@@ -16,10 +17,12 @@ class Welcome extends CI_Controller {
 	}
 //========================================================================================================
 	public function formation(){
-		$this->load->view('formation');
+		$data['formation'] = $this->main_model-> Get_All_Formation();
+		$this->load->view('formation',$data);
 	}
 //========================================================================================================
 	public function app(){
+		$data['application'] = $this->main_model->Get_All_Application();
 		$this->load->view('app');
 	}
 //========================================================================================================
