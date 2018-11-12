@@ -17,13 +17,13 @@ class Welcome extends CI_Controller {
 	}
 //========================================================================================================
 	public function formation(){
-		$data['formation'] = $this->main_model-> Get_All_Formation();
+		$data['formation'] = $this->main_model->Get_All_Formation();
 		$this->load->view('formation',$data);
 	}
 //========================================================================================================
 	public function app(){
 		$data['application'] = $this->main_model->Get_All_Application();
-		$this->load->view('app');
+		$this->load->view('app',$data);
 	}
 //========================================================================================================
 	public function detail_app(){
