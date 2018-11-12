@@ -2,7 +2,7 @@
 
     defined('BASEPATH') OR exit('No direct script access allowed');
 
-    class Welcome extends CI_Controller {
+    class Main_model extends CI_Model {
 
         private $table_formation = 'mfo_formation';
         private $table_application = 'mfo_application';
@@ -86,7 +86,7 @@
             return (int) $this->db->count_all_results($this->table_contact);
         }
 
-        
+
 
 
 
