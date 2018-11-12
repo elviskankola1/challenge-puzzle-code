@@ -51,7 +51,7 @@ class Welcome extends CI_Controller {
 		$mumber_user = strip_tags($this->input->post('phone'));
 		$date_accepte =strip_tags( $this->input->post('date'));
 		if (filter_var($mail_user,FILTER_VALIDATE_EMAIL == true)) {
-			$this->main_model->Add_User_adhere($name_user,$mail_user,$number_user,$date_accepte)
+			$this->main_model->Add_User_adhere($name_user,$mail_user,$number_user,$date_accepte);
 		}else{
 			$this->load->view('');
 		}
