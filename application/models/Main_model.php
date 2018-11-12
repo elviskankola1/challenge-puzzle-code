@@ -6,6 +6,7 @@
 
         private $table_formation = 'mfo_formation';
         private $table_application = 'mfo_application';
+        private $table_contact = 'mfo_contact';
         function __construct(){
            
             parent::__construct();
@@ -18,6 +19,17 @@
             $this->db->set('',$file);
             return $this->db->insert($this->table_formation);
         }
+
+        public function Add_Message_Contact($name,$mail,$phone,$message){
+
+            $this->db->set('',$name);
+            $this->db->set('',$mail);
+            $this->db->set('',$phone);
+            $this->db->set('',$message);
+            return $this->db->insert($this->table_contact);
+        }
+
+
 
         public function Add_Applixcation($titre,$description,$file){
 
@@ -50,6 +62,8 @@
             $query = $this->db->where('id_application',$id)->get($this->table_application);
             return $query;
         }
+
+
 
 
 
