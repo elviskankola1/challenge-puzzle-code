@@ -45,6 +45,11 @@
             return $query;
         }
 
+        public function Get_One_Application($id){
+
+            $query = $this->db->where('id_application',$id)->get($this->table_application);
+            return $query;
+        }
 
 
 
