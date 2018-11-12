@@ -32,19 +32,24 @@ class Welcome extends CI_Controller {
 	}
 //========================================================================================================
 	public function contactez_nous(){
-		$nom = $this->input_>post('nom');
-		$mail = $this->input->post('mail');
-		$mumber = $this->input->post('phone');
-		$message = $this->input->post('message');
-		//ICI REQUETE BASE DE DONNEES
+		$name = strip_tags($this->input_>post('nom'));
+		$mail = strip_tags($this->input->post('mail'));
+		$phone = strip_tags($this->input->post('phone'));
+		$message =strip_tags( $this->input->post('message'));
+		if (filter_var($mail,FILTER_VALIDATE_EMAIL)) {
+			$this->main_model-> Add_Message_Contact($name,$mail,$phone,$message);
+			$this->load->view('');
+		}else{
+			$this->load->view('');
+		}
 	}
 //==================================================================================================
 	public function adhere_formation(){
 
-		$name_user = $this->input_>post('nom');
-		$mail_user = $this->input->post('mail');
-		$mumber_user = $this->input->post('phone');
-		$data_accepte = $this->input->post('date');
+		$name_user = strip_tags($this->input_>post('nom'));
+		$mail_user = strip_tags($this->input->post('mail'));
+		$mumber_user = strip_tags($this->input->post('phone'));
+		$data_accepte =strip_tags( $this->input->post('date'));
 		//ICI REQUETE BASE DE DONNEES
 	}
 
