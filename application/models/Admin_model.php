@@ -28,9 +28,9 @@
         //-----------------------------------------------------------------
         public function Add_Application($titre,$description,$file){
 
-            $this->db->set('',$titre);
-            $this->db->set('',$description);
-            $this->db->set('',$file);
+            $this->db->set('titre_app',$titre);
+            $this->db->set('description_app',$description);
+            $this->db->set('file_app',$file);
             return $this->db->insert($this->table_application);
         }
 
