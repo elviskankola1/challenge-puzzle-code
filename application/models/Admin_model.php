@@ -4,6 +4,10 @@
 
     class Admin_model extends CI_Model {
 
+/*========================================================================================================================
+                                                 ICI LES ATTRIBUTS DE LA CLASSE && SON CONSTRUCTEUR                                                             |
+========================================================================================================================*/
+
         private $table_formation = 'mfo_formation';
         private $table_application = 'mfo_application';
 
@@ -21,7 +25,7 @@
             $this->db->set('',$file);
             return $this->db->insert($this->table_formation);
         }
-
+        //-----------------------------------------------------------------
         public function Add_Application($titre,$description,$file){
 
             $this->db->set('',$titre);
@@ -38,12 +42,12 @@
 
             return (int) $this->db->count_all_results($this->table_formation);
         }
-
+        //--------------------------------------------------------------------
         public function Count_Application(){
 
             return (int) $this->db->count_all_results($this->table_application);
         }
-
+        //----------------------------------------------------------------------
         public function Count_Message(){
 
             return (int) $this->db->count_all_results($this->table_contact);
@@ -57,10 +61,11 @@
             $query = $this->db->where('id_formation',$id)->get($this->table_formation);
             return $query;
         }
-
+        //------------------------------------------------------------------------------
         public function Get_One_Application($id){
 
             $query = $this->db->where('id_application',$id)->get($this->table_application);
             return $query;
         }
+        
     }
