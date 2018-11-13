@@ -32,14 +32,6 @@
         }
 
 
-        public function Add_Applixcation($titre,$description,$file){
-
-            $this->db->set('',$titre);
-            $this->db->set('',$description);
-            $this->db->set('',$file);
-            return $this->db->insert($this->table_application);
-        }
-
         public function Get_All_Formation(){
 
             $query = $this->db->select()->get($this->table_formation);
