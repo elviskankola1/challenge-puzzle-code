@@ -20,9 +20,9 @@
 ========================================================================================================================*/
         public function Add_Formation($titre,$description,$file){
 
-            $this->db->set('',$titre);
-            $this->db->set('',$description);
-            $this->db->set('',$file);
+            $this->db->set('titre_formation',$titre);
+            $this->db->set('description_formation',$description);
+            $this->db->set('file_formation',$file);
             return $this->db->insert($this->table_formation);
         }
         //-----------------------------------------------------------------
