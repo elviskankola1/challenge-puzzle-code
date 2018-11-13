@@ -43,4 +43,16 @@
 
             return (int) $this->db->count_all_results($this->table_contact);
         }
+
+        public function Get_One_Formation($id){
+
+            $query = $this->db->where('id_formation',$id)->get($this->table_formation);
+            return $query;
+        }
+
+        public function Get_One_Application($id){
+
+            $query = $this->db->where('id_application',$id)->get($this->table_application);
+            return $query;
+        }
     }
