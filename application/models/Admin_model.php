@@ -11,4 +11,13 @@
            
             parent::__construct();
         }
+
+        public function Add_Formation($titre,$description,$file){
+
+            $this->db->set('',$titre);
+            $this->db->set('',$description);
+            $this->db->set('',$file);
+            return $this->db->insert($this->table_formation);
+        }
+
     }
