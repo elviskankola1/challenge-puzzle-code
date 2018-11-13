@@ -56,20 +56,6 @@
             return $query;
         }
 
-        public function Count_Formation(){
-
-            return (int) $this->db->count_all_results($this->table_formation);
-        }
-
-        public function Count_Application(){
-
-            return (int) $this->db->count_all_results($this->table_application);
-        }
-
-        public function Count_Message(){
-
-            return (int) $this->db->count_all_results($this->table_contact);
-        }
 
 
 
