@@ -9,7 +9,22 @@ class Mfo_admin extends CI_Controller {
 
     }
 
+    public function index(){
+
+        $this->load->view('admin_view/index');
+    }
+
+
+
     public function Add_Formation_In_database(){
+
+        $title = strip_tags($this->input->post('titre'));
+        $description = strip_tags($this->input->post('description'));
+        $file = strip_tags($this->input->post('file'));
+        
+    }
+
+    public function Add_Application_In_database(){
 
         $title = strip_tags($this->input->post('titre'));
         $description = strip_tags($this->input->post('description'));
