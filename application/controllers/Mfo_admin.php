@@ -27,12 +27,14 @@ class Mfo_admin extends CI_Controller {
 		$config['max_width']  = '1024';
 		$config['max_height']  = '768';
 		$this->load->library('upload', $config);
-        $title = strip_tags($this->input->post('titre'));
-        $description = strip_tags($this->input->post('description'));
+        
         if ( ! $this->upload->do_upload()){
             $data = array('error' => $this->upload->display_errors());
             $this->load->view('addarticle', $data);
         }else{
+
+            $title = strip_tags($this->input->post('titre'));
+            $description = strip_tags($this->input->post('description'));
             $chemin= $this->upload->data();
             $data = array('upload_data' => $this->upload->data());
             foreach ($chemin as $key => $value) {
