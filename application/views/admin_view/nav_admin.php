@@ -65,10 +65,10 @@
     <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<div class="profile-sidebar">
 			<div class="profile-userpic">
-				<img src="users.png" class="img-responsive" alt="">
+				<img src="<?php echo base_url('assets/images/3.jpg');?>" class="img-responsive" alt="">
 			</div>
 			<div class="profile-usertitle">
-				<div class="profile-usertitle-name">nom admin marque</div>
+				<div class="profile-usertitle-name">elvis kankola</div>
 				<div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
 			</div>
 			<div class="clear"></div>
@@ -83,6 +83,7 @@
 			<li class="active"><a href="<?php echo base_url();?>"><em class="fa fa-dashboard">&nbsp;</em> Tableau de bord</a></li>
 			<li><a href="<?php echo base_url();?>"><em class="fa fa-calendar">&nbsp;</em> Commandes</a></li>
 			<li><a href="<?php echo base_url();?>"><em class="fa fa-bar-chart">&nbsp;</em> Statistiques</a></li>
+			<li><a href="<?php echo base_url('index.php/mfo_admin/Page_Add_App');?>"><em class="fa fa-calendar">&nbsp;</em> Publier une application</a></li>
 			
 			<li><a href="<?php echo base_url('mfo/login');?>"><em class="fa fa-power-off">&nbsp;</em> Deconnexion</a></li>
 		</ul>
