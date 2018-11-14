@@ -6,7 +6,7 @@
 			<div class="login-panel panel panel-default" style="width:100%;">
 				<div class="panel-heading">Formulaire d'ajout</div>
 				<div class="panel-body">
-					<?php echo form_open();?>>
+					<?php echo form_open();?>
                     <div class="form-group">
                                     <div class="input-group"  style="width:60%;">
                                         <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
@@ -26,7 +26,7 @@
                                     </div>
                                 </div>
 							<a href="" class="btn btn-primary">Publier</a></fieldset>
-					<?php echo form_close();?>>
+					<?php echo form_close();?>
 				</div>
 			</div>
 		</div>
