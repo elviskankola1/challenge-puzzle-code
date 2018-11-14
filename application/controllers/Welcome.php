@@ -5,11 +5,11 @@ class Welcome extends CI_Controller {
 
 	public function index(){
 
-		$this->load->view('header');
 		$this->load->view('accueil');
 	}
 //=========================================================================================================
 	public function apropos(){
+		
 		$this->load->view('about');
 	}
 //=========================================================================================================
