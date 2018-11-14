@@ -11,6 +11,7 @@
 
         private $table_formation = 'mfo_formation';
         private $table_application = 'mfo_application';
+        private $table_blog = 'mfo_blog';
 
         function __construct(){
            
