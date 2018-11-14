@@ -115,18 +115,24 @@ class Mfo_admin extends CI_Controller {
         $this->load->view('admin_view/footer_admin');
     }
 //-----------------------------------------------------------------
-    public function page_add_app(){
+    public function Page_Add_App(){
 
+        $this->load->view('admin_view/header_admin');
+        $this->load->view('admin_view/nav_admin');
         $this->load->view('add_app');
     }
 //-------------------------------------------------------------------    
-    public function page_add_form(){
+    public function Page_Add_Form(){
 
+        $this->load->view('admin_view/header_admin');
+        $this->load->view('admin_view/nav_admin');
         $this->load->view('add_formation');
     }
 //-------------------------------------------------------------------    
-    public function page_add_item_blog(){
+    public function Page_Add_Item_Blog(){
 
+        $this->load->view('admin_view/header_admin');
+        $this->load->view('admin_view/nav_admin');
         $this->load->view('add_items');
     }
 
