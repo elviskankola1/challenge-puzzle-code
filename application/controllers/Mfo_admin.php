@@ -124,7 +124,7 @@ class Mfo_admin extends CI_Controller {
 
         $this->load->view('add_formation');
     }
-    
+//-------------------------------------------------------------------    
     public function page_add_item_blog(){
 
         $this->load->view('add_items');
