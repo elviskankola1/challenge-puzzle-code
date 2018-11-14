@@ -84,6 +84,6 @@
 			<li><a href="<?php echo base_url();?>"><em class="fa fa-calendar">&nbsp;</em> Commandes</a></li>
 			<li><a href="<?php echo base_url();?>"><em class="fa fa-bar-chart">&nbsp;</em> Statistiques</a></li>
 			
-			<li><a href="<?php echo base_url();?>"><em class="fa fa-power-off">&nbsp;</em> Deconnexion</a></li>
+			<li><a href="<?php echo base_url('mfo/login');?>"><em class="fa fa-power-off">&nbsp;</em> Deconnexion</a></li>
 		</ul>
 	</div>
