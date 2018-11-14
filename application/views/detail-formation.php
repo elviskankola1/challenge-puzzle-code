@@ -1,52 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
-	
-	<title>SITE</title>
-
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
-	
-	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
-	<link rel="stylesheet" href="assets/css/main.css">
-</head>
-
 <body>
-		<div class="navbar navbar-inverse navbar-fixed-top headroom" >
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-						<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
-					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav pull-right">
-							<li class="active"><a href="index.html">Accueil</a></li>
-							<li><a href="about.html">Apropos</a></li>
-							<li>
-								<a href="formation.html">Formation</a>
-							</li>
-							<li>
-								<a href="app.html">Logiciel</a>
-							</li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div> 
-	<header id="head" class="secondary"></header>
-	<div class="container">
 		
-		<ol class="breadcrumb">
-			<li><a href="index.html">Accueil</a></li>
-			<li class="active">Detail-Formation</li>
-		</ol>
-
 		<div class="row">
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
@@ -67,10 +22,8 @@
 				<p>Odit, laudantium, dolores, natus distinctio labore voluptates in inventore quasi qui nobis quis adipisci fugit id! Aliquam alias ea modi. Porro, odio, sed veniam hic numquam qui ad molestiae sint placeat expedita? Perferendis, enim qui numquam sequi obcaecati molestiae fugiat!</p>
 				<p>Aperiam, odit, quasi, voluptate fugiat quisquam velit magni provident corporis animi facilis illo eveniet eum obcaecati adipisci blanditiis quas labore doloribus eos veniam repudiandae suscipit tempora ad harum odio eius distinctio hic deleniti. Sunt fuga ad perspiciatis repellat deleniti omnis!</p>
 			</article>
-			<!-- /Article -->
-
 		</div>
-	</div>	<!-- /container -->
+	</div>
 	<footer id="footer" class="top-space">
 
 			<div class="footer1">
