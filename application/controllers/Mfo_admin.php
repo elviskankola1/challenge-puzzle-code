@@ -17,7 +17,11 @@ class Mfo_admin extends CI_Controller {
         $this->load->view('admin_view/footer_admin');
 
     }
+/*========================================================================================================================
+                                            ICI LES FONCTIONS AJOUTANT  DANS  DB                                                          |
+========================================================================================================================*/
     public function Add_Formation_In_database(){
+        
         $config['upload_path'] = './assets/uploads/app';
 		$config['allowed_types'] = 'jpg|JPG|PNG|png';
 		$config['max_size']	= '500';
@@ -104,12 +108,17 @@ class Mfo_admin extends CI_Controller {
                                             ICI LES FONCTIONS REPRESENTANT DES PAGES                                                           |
 ========================================================================================================================*/
 
-    public function login(){
+    public function Login(){
 
         $this->load->view('admin_view/header_admin');
         $this->load->view('admin_view/adminlogin');
         $this->load->view('admin_view/footer_admin');
     }
+
+    public function page_add_app(){
+
+        $this->load->view('');
+    } 
 
 
 }
