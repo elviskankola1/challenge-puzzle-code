@@ -14,6 +14,7 @@ class Mfo_admin extends CI_Controller {
         $this->load->view('admin_view/header_admin');
         $this->load->view('admin_view/nav_admin');
         $this->load->view('admin_view/index');
+        $this->load->view('admin_view/footer_admin');
 
     }
 
@@ -23,7 +24,14 @@ class Mfo_admin extends CI_Controller {
 
         $title = strip_tags($this->input->post('titre'));
         $description = strip_tags($this->input->post('description'));
-        $file = strip_tags($this->input->post('file'));
+        $chemin= $this->upload->data();
+		$data = array('upload_data' => $this->upload->data());
+		foreach ($chemin as $key => $value) {
+			if ($key==='file_name') {
+
+					$file= './assets/uploads/'.$value;
+				}
+            }
         
     }
 
