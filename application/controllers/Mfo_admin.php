@@ -18,10 +18,8 @@ class Mfo_admin extends CI_Controller {
 
     }
 
-
-
     public function Add_Formation_In_database(){
-        $config['upload_path'] = './assets/uploads/';
+        $config['upload_path'] = './assets/uploads/app';
 		$config['allowed_types'] = 'jpg|JPG|PNG|png';
 		$config['max_size']	= '500';
 		$config['max_width']  = '1024';
@@ -30,7 +28,7 @@ class Mfo_admin extends CI_Controller {
         
         if ( ! $this->upload->do_upload()){
             $data = array('error' => $this->upload->display_errors());
-            $this->load->view('addarticle', $data);
+            $this->load->view('index', $data);
         }else{
 
             $title = strip_tags($this->input->post('titre'));
@@ -50,9 +48,60 @@ class Mfo_admin extends CI_Controller {
 
     public function Add_Application_In_database(){
 
-        $title = strip_tags($this->input->post('titre'));
-        $description = strip_tags($this->input->post('description'));
-        $file = strip_tags($this->input->post('file'));
+        $config['upload_path'] = './assets/uploads/form';
+		$config['allowed_types'] = 'jpg|JPG|PNG|png';
+		$config['max_size']	= '500';
+		$config['max_width']  = '1024';
+		$config['max_height']  = '768';
+        $this->load->library('upload', $config);
         
+        if ( ! $this->upload->do_upload()){
+            $data = array('error' => $this->upload->display_errors());
+            $this->load->view('index', $data);
+        }else{
+
+            $title = strip_tags($this->input->post('titre'));
+            $description = strip_tags($this->input->post('description'));
+            $chemin= $this->upload->data();
+            $data = array('upload_data' => $this->upload->data());
+            foreach ($chemin as $key => $value) {
+                if ($key==='file_name') {
+
+                    $file= './assets/uploads/'.$value;
+                }
+            }
+        }
+        $this->admin_model->Add_Application($title,$description,$file);  
     }
+
+    public function Add_item_blog_In_database(){
+
+        $config['upload_path'] = './assets/uploads/blog';
+		$config['allowed_types'] = 'jpg|JPG|PNG|png';
+		$config['max_size']	= '500';
+		$config['max_width']  = '1024';
+		$config['max_height']  = '768';
+        $this->load->library('upload', $config);
+        
+        if ( ! $this->upload->do_upload()){
+            $data = array('error' => $this->upload->display_errors());
+            $this->load->view('index', $data);
+        }else{
+
+            $title = strip_tags($this->input->post('titre'));
+            $description = strip_tags($this->input->post('description'));
+            $chemin= $this->upload->data();
+            $data = array('upload_data' => $this->upload->data());
+            foreach ($chemin as $key => $value) {
+                if ($key==='file_name') {
+
+                    $file= './assets/uploads/'.$value;
+                }
+            }
+        }
+        $this->admin_model->Add_Item_Blog($title,$description,$file);  
+    }
+
+
+
 }
