@@ -80,10 +80,10 @@
 			</div>
 		</form>
 		<ul class="nav menu">
-			<li class="active"><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em> Tableau de bord</a></li>
-			<li><a href="widgets.html"><em class="fa fa-calendar">&nbsp;</em> Commandes</a></li>
-			<li><a href="charts.html"><em class="fa fa-bar-chart">&nbsp;</em> Statistiques</a></li>
+			<li class="active"><a href="<?php echo base_url();?>"><em class="fa fa-dashboard">&nbsp;</em> Tableau de bord</a></li>
+			<li><a href="<?php echo base_url();?>"><em class="fa fa-calendar">&nbsp;</em> Commandes</a></li>
+			<li><a href="<?php echo base_url();?>"><em class="fa fa-bar-chart">&nbsp;</em> Statistiques</a></li>
 			
-			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Deconnexion</a></li>
+			<li><a href="<?php echo base_url();?>"><em class="fa fa-power-off">&nbsp;</em> Deconnexion</a></li>
 		</ul>
 	</div>
