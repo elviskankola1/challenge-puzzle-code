@@ -127,7 +127,7 @@ class Mfo_admin extends CI_Controller {
 
         $this->load->view('admin_view/header_admin');
         $this->load->view('admin_view/nav_admin');
-        $this->load->view('add_formation');
+        $this->load->view('admin_view/add_form');
         $this->load->view('admin_view/footer_admin');
     }
 //-------------------------------------------------------------------    
