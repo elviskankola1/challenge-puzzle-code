@@ -41,8 +41,9 @@
             $this->db->set('titre_app',$titre);
             $this->db->set('description_app',$description);
             $this->db->set('file_app',$file);
-            return $this->db->insert($this->table_application);
+            return $this->db->insert($this->table_blog);
         }
+
 
 /*========================================================================================================================
                                              ICI LES FONCTIONS QUI COMPTE DANS DB                                                            |
@@ -77,5 +78,6 @@
             $query = $this->db->where('id_app',$id)->get($this->table_application);
             return $query;
         }
+
         
     }
