@@ -34,6 +34,14 @@
             $this->db->set('file_app',$file);
             return $this->db->insert($this->table_application);
         }
+        //------------------------------------------------------------------
+        public function Add_Item_Blog($titre,$description,$file){
+
+            $this->db->set('titre_app',$titre);
+            $this->db->set('description_app',$description);
+            $this->db->set('file_app',$file);
+            return $this->db->insert($this->table_application);
+        }
 
 /*========================================================================================================================
                                              ICI LES FONCTIONS QUI COMPTE DANS DB                                                            |
