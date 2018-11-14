@@ -119,7 +119,7 @@ class Mfo_admin extends CI_Controller {
 
         $this->load->view('admin_view/header_admin');
         $this->load->view('admin_view/nav_admin');
-        $this->load->view('add_app');
+        $this->load->view('admin_view/add_app');
     }
 //-------------------------------------------------------------------    
     public function Page_Add_Form(){
