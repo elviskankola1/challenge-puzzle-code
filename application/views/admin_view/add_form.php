@@ -6,27 +6,27 @@
 			<div class="login-panel panel panel-default" style="width:100%;">
 				<div class="panel-heading">Formulaire d'ajout</div>
 				<div class="panel-body">
-					<form role="form">
+					<?php echo form_open();?>>
                     <div class="form-group">
                                     <div class="input-group"  style="width:60%;">
                                         <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-                                        <input type="text" class="form-control" placeholder="entez un titre">
+                                        <input type="text" class="form-control" placeholder="entez un titre" name="titre">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div  class="input-group" style="width:60%;" >
                                         <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-                                        <input type="file" class="form-control" >
+                                        <input type="file" class="form-control" name="userfile" >
                                     </div>
                                 </div>
                                 <div class="form-group" >
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-                                        <textarea cols="65" rows="5" placeholder="  entrez la description" width="100%"></textarea>
+                                        <textarea cols="65" rows="5" placeholder="  entrez la description" width="100%" name="description"></textarea>
                                     </div>
                                 </div>
-							<a href="index.html" class="btn btn-primary">Publier</a></fieldset>
-					</form>
+							<a href="" class="btn btn-primary">Publier</a></fieldset>
+					<?php echo form_close();?>>
 				</div>
 			</div>
 		</div>
