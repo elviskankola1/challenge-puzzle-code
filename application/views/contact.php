@@ -51,22 +51,22 @@
 					<h1 class="page-title">Contactez nous</h1>
 				</header>
 				<br>
-					<?php echo form_open();?>
+					<?php echo form_open('index.php/welcome/contactez_nous');?>
 						<div class="row">
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Entrez votre nom">
+								<input class="form-control" type="text" placeholder="Entrez votre nom" name="nom" required>
 							</div>
 							<div class="col-sm-4">
-								<input class="form-control" type="email" placeholder="Entrez votre adresse email">
+								<input class="form-control" type="email" placeholder="Entrez votre adresse email" name="mail" required>
 							</div>
 							<div class="col-sm-4">
-								<input class="form-control" type="number" placeholder="entrez votre numero de telephone">
+								<input class="form-control" type="number" placeholder="entrez votre numero de telephone" name="phone" required>
 							</div>
 						</div>
 						<br>
 						<div class="row">
 							<div class="col-sm-12">
-								<textarea placeholder="Ecrivez le  message ici..." class="form-control" rows="9"></textarea>
+								<textarea placeholder="Ecrivez le  message ici..." class="form-control" rows="9" name="message" required></textarea>
 							</div>
 						</div>
 						<br>
