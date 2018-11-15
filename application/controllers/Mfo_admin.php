@@ -60,7 +60,7 @@ class Mfo_admin extends CI_Controller {
         
         if ( ! $this->upload->do_upload()){
             $data['error'] = $this->upload->display_errors();
-            $this->load->view('add_app', $data);
+            $this->load->view('admin_view/add_app', $data);
         }else{
 
             $title = strip_tags($this->input->post('titre'));
@@ -72,9 +72,11 @@ class Mfo_admin extends CI_Controller {
 
                     $file= './assets/uploads/'.$value;
                 }
+                $this->admin_model->Add_Application($title,$description,$file);
+                $this->load->view('admin_view/add_app', $data);
             }
         }
-        $this->admin_model->Add_Application($title,$description,$file);  
+          
     }
 //--------------------------------------------------------------------------------------------
     public function Add_item_blog_In_database(){
