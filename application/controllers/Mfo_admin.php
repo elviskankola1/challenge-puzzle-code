@@ -9,10 +9,12 @@ class Mfo_admin extends CI_Controller {
 
     }
 
+    
     public function index(){
+        
         $data['nb_msg'] = $this->admin_model->Count_Message();
-        $this->load->view('admin_view/header_admin',$data);
-        $this->load->view('admin_view/nav_admin');
+        $this->load->view('admin_view/header_admin');
+        $this->load->view('admin_view/nav_admin',$data);
         $this->load->view('admin_view/index');
         $this->load->view('admin_view/footer_admin');
 
@@ -31,8 +33,9 @@ class Mfo_admin extends CI_Controller {
         
         if ( ! $this->upload->do_upload()){
             $data = array('error' => $this->upload->display_errors());
+            $data['nb_msg'] = $this->admin_model->Count_Message();
             $this->load->view('admin_view/header_admin');
-            $this->load->view('admin_view/nav_admin');
+            $this->load->view('admin_view/nav_admin',$data);
             $this->load->view('admin_view/add_form');
         }else{
 
@@ -48,8 +51,10 @@ class Mfo_admin extends CI_Controller {
                 }
             }
              $this->admin_model->Add_Formation($title,$description,$file);
+
+             $data['nb_msg'] = $this->admin_model->Count_Message();
              $this->load->view('admin_view/header_admin');
-             $this->load->view('admin_view/nav_admin');
+             $this->load->view('admin_view/nav_admin',$data);
              $this->load->view('admin_view/add_form');
         }
         
@@ -65,8 +70,9 @@ class Mfo_admin extends CI_Controller {
         $this->load->library('upload', $config);
         
         if ( ! $this->upload->do_upload()){
+            $data['nb_msg'] = $this->admin_model->Count_Message();
             $this->load->view('admin_view/header_admin');
-            $this->load->view('admin_view/nav_admin');
+            $this->load->view('admin_view/nav_admin',$data);
             $this->load->view('admin_view/add_app');
         }else{
             $title = strip_tags($this->input->post('titre'));
@@ -82,8 +88,9 @@ class Mfo_admin extends CI_Controller {
                 
             }
             $this->admin_model->Add_Application($title,$description,$file);
+            $data['nb_msg'] = $this->admin_model->Count_Message();
             $this->load->view('admin_view/header_admin');
-            $this->load->view('admin_view/nav_admin');
+            $this->load->view('admin_view/nav_admin',$data);
             $this->load->view('admin_view/add_app');
         }
           
@@ -100,8 +107,9 @@ class Mfo_admin extends CI_Controller {
         
         if ( ! $this->upload->do_upload()){
            
+            $data['nb_msg'] = $this->admin_model->Count_Message();
             $this->load->view('admin_view/header_admin');
-            $this->load->view('admin_view/nav_admin');
+            $this->load->view('admin_view/nav_admin',$data);
             $this->load->view('admin_view/add_blog');
         }else{
             $title = strip_tags($this->input->post('titre'));
@@ -117,8 +125,9 @@ class Mfo_admin extends CI_Controller {
                 
             }
             $this->admin_model->Add_Item_Blog($title,$description,$file);
+            $data['nb_msg'] = $this->admin_model->Count_Message();
             $this->load->view('admin_view/header_admin');
-            $this->load->view('admin_view/nav_admin');
+            $this->load->view('admin_view/nav_admin',$data);
             $this->load->view('admin_view/add_blog');
         }
           
@@ -137,24 +146,27 @@ class Mfo_admin extends CI_Controller {
 //-----------------------------------------------------------------
     public function Page_Add_App(){
 
+        $data['nb_msg'] = $this->admin_model->Count_Message();
         $this->load->view('admin_view/header_admin');
-        $this->load->view('admin_view/nav_admin');
+        $this->load->view('admin_view/nav_admin',$data);
         $this->load->view('admin_view/add_app');
         $this->load->view('admin_view/footer_admin');
     }
 //-------------------------------------------------------------------    
     public function Page_Add_Form(){
 
+        $data['nb_msg'] = $this->admin_model->Count_Message();
         $this->load->view('admin_view/header_admin');
-        $this->load->view('admin_view/nav_admin');
+        $this->load->view('admin_view/nav_admin',$data);
         $this->load->view('admin_view/add_form');
         $this->load->view('admin_view/footer_admin');
     }
 //-------------------------------------------------------------------    
     public function Page_Add_Item_Blog(){
 
+        $data['nb_msg'] = $this->admin_model->Count_Message();
         $this->load->view('admin_view/header_admin');
-        $this->load->view('admin_view/nav_admin');
+        $this->load->view('admin_view/nav_admin',$data);
         $this->load->view('admin_view/add_blog');
         $this->load->view('admin_view/footer_admin');
     }
