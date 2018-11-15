@@ -7,7 +7,7 @@
 				<div class="panel-heading">Formulaire d'ajout</div>
 				<div class="panel-body">
                     <?php echo $error;?>
-					<?php echo form_open('index.php/mfo_admin/Add_Application_In_database');?>
+					<?php echo form_open_multipart('index.php/mfo_admin/Add_Application_In_database');?>
                     <div class="form-group">
                                     <div class="input-group"  style="width:60%;">
                                         <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
@@ -26,7 +26,7 @@
                                         <textarea cols="65" rows="5" placeholder="  entrez la description" width="100%" name="description"></textarea>
                                     </div>
                                 </div>
-							<a href="" class="btn btn-primary">Publier</a></fieldset>
+							<button class="btn btn-primary">Publier</button></fieldset>
 					<?php echo form_close();?>
 				</div>
 			</div>
