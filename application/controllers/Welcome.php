@@ -28,13 +28,13 @@ class Welcome extends CI_Controller {
 	}
 //========================================================================================================
 	public function detail_app(){
-		$id_app = $this->uri->segment(4);
-		$data['app'] = $this->main_model->Get_One_Application($id_app);
+		$id_app = $this->uri->segment(3);
+		$data['application'] = $this->main_model->Get_One_Application($id_app);
 		$this->load->view('detail-app',$data);
 	}
 //========================================================================================================
 	public function detail_formation(){
-		$id_form = $this->uri->segment(4);
+		$id_form = $this->uri->segment(3);
 		$data['form'] = $this->main_model->Get_One_Formation($id_form);
 		$this->load->view('detail-formation',$data);
 	}
