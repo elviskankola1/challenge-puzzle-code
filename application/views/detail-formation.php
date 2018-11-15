@@ -48,29 +48,26 @@
 		</ol>
 
 		<div class="row">
+			<?php foreach($form as $value):?>
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
+						<p><img src="<?php echo base_url($value->file_formation);?>" alt=""></p>
 					</div>
 				</div>
 
 			</aside>
 			<article class="col-md-8 maincontent">
 				<header class="page-header">
-					<h1 class="page-title">Titre-formation</h1>
+					<h1 class="page-title"><?php echo $value->titre_formation;?></h1>
 				</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, itaque, cumque, maxime obcaecati reprehenderit ea dignissimos amet voluptatem id excepturi facilis totam veritatis maiores eveniet neque explicabo temporibus quisquam in ex ab fugiat ipsa tempore sunt corporis nostrum quam illum!</p>
-				<p>Consectetur cupiditate labore repudiandae beatae nisi fugiat facilis natus illum vitae doloremque. In, perspiciatis, natus, impedit voluptas itaque odio repudiandae placeat nisi totam repellendus earum dolores mollitia tempore quasi beatae alias cum dicta maxime laborum corporis harum porro magnam laboriosam.</p>
-				<p>Aut, eaque, minus atque alias odio mollitia cum nisi ipsa nulla natus quae minima similique ipsam aspernatur molestias animi in deleniti nam. Tempora, labore, modi eum perspiciatis doloremque sequi nam illo corporis iusto maiores nisi recusandae repellat animi reiciendis accusamus.</p>
-				<blockquote>Numquam, ut iure quia facere totam quas odit illo incidunt. Voluptatem, nostrum, ex, quasi incidunt similique cum maxime expedita unde labore inventore excepturi veniam corporis sequi facere ullam voluptates amet illum quam fuga voluptatibus ipsum atque sunt eos. Ut, necessitatibus.</blockquote>
-				<p>Odit, laudantium, dolores, natus distinctio labore voluptates in inventore quasi qui nobis quis adipisci fugit id! Aliquam alias ea modi. Porro, odio, sed veniam hic numquam qui ad molestiae sint placeat expedita? Perferendis, enim qui numquam sequi obcaecati molestiae fugiat!</p>
-				<p>Aperiam, odit, quasi, voluptate fugiat quisquam velit magni provident corporis animi facilis illo eveniet eum obcaecati adipisci blanditiis quas labore doloribus eos veniam repudiandae suscipit tempora ad harum odio eius distinctio hic deleniti. Sunt fuga ad perspiciatis repellat deleniti omnis!</p>
+				<p><?php echo $value->description_formation;?></p>
 			</article>
+			<?php endforeach?>
 		</div>
-	</div>
+	</div><br><br><br><br><br><br><br><br><br><br><br><br>
 	<?php else:?>
-		<h1> Detail non trouver!</h1>
+		<br><br><br><br><br><h1> Detail non trouver!</h1><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<?php endif?>
 	<footer id="footer" class="top-space">
 
