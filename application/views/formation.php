@@ -35,17 +35,17 @@
                     <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav pull-right">
-                        <li class="active"><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">Apropos</a></li>
-                        <li>
-                            <a href="formation.html">Formation</a>
-                        </li>
-                        <li>
-                            <a href="app.html">Logiciel</a>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+					<ul class="nav navbar-nav pull-right">
+						<li class="active"><a href="<?php echo base_url();?>">Accueil</a></li>
+						<li><a href="<?php echo base_url('index.php/welcome/apropos');?>">Apropos</a></li>
+						<li>
+							<a href="<?php echo base_url('index.php/welcome/formation');?>">Formation</a>
+						</li>
+						<li>
+							<a href="<?php echo base_url('index.php/welcome/application');?>">Logiciel</a>
+						</li>
+						<li><a href="<?php echo base_url('index.php/welcome/contact');?>">Contact</a></li>
+					</ul>
                 </div>
             </div>
         </div> 
