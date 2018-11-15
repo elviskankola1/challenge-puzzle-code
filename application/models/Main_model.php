@@ -34,25 +34,25 @@
 
         public function Get_All_Formation(){
 
-            return $this->db->select()->get($this->table_formation)->result();
+            return $this->db->select()->order_by('id_formation','desc')->get($this->table_formation)->result();
             
         }
 
         public function Get_All_Application(){
 
-            return $this->db->select()->get($this->table_application)->result();
+            return $this->db->select()->order_by('id_app','desc')->get($this->table_application)->result();
            
         }
 
         public function Get_One_Formation($id){
 
-            $query = $this->db->where('id_formation',$id)->get($this->table_formation);
+            $query = $this->db->where('id_formation',$id)->get($this->table_formation)->result();
             return $query;
         }
 
         public function Get_One_Application($id){
 
-            $query = $this->db->where('id_application',$id)->get($this->table_application);
+            $query = $this->db->where('id_app',$id)->get($this->table_application)->result();
             return $query;
         }
 
