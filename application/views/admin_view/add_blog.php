@@ -6,14 +6,13 @@
 			<div class="login-panel panel panel-default" style="width:100%;">
 				<div class="panel-heading">Formulaire d'ajout</div>
 				<div class="panel-body">
-					<?php echo form_open();?>
+					<?php echo form_open('index.php/mfo_admin/Add_item_blog_In_database');?>
                     <div class="form-group">
                                     <div class="input-group"  style="width:60%;">
                                         <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
                                         <input type="text" class="form-control" placeholder="entez un titre" name="titre">
                                     </div>
                                 </div>
-                             
                                 <input type="file" name="userfile" width="50%"><br>
                                 <div class="form-group" >
                                     <div class="input-group">
