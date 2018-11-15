@@ -65,7 +65,7 @@
 					<div class="col-xs-12">
 						<p><img src="<?php echo base_url($value->file_app);?>" alt=""></p>
 						<h4><?php echo $value->titre_app;?></h4>
-						<p><a class="btn btn-action btn-lg" role="button" href="detail-app.html">Detail</a></p>
+						<p><a href="<?php echo base_url('index.php/welcome/detail_app/').$value->id_app;?>" class="btn btn-action btn-lg" role="button" >Detail</a></p>
 					</div>
 				</div>
 
