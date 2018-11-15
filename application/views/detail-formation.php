@@ -37,7 +37,8 @@
 						</ul>
 					</div>
 				</div>
-			</div> 
+			</div>
+	<?php if($form):?> 
 	<header id="head" class="secondary"></header>
 	<div class="container">
 		
@@ -66,10 +67,8 @@
 				<p>Odit, laudantium, dolores, natus distinctio labore voluptates in inventore quasi qui nobis quis adipisci fugit id! Aliquam alias ea modi. Porro, odio, sed veniam hic numquam qui ad molestiae sint placeat expedita? Perferendis, enim qui numquam sequi obcaecati molestiae fugiat!</p>
 				<p>Aperiam, odit, quasi, voluptate fugiat quisquam velit magni provident corporis animi facilis illo eveniet eum obcaecati adipisci blanditiis quas labore doloribus eos veniam repudiandae suscipit tempora ad harum odio eius distinctio hic deleniti. Sunt fuga ad perspiciatis repellat deleniti omnis!</p>
 			</article>
-			<!-- /Article -->
-
 		</div>
-	</div>	<!-- /container -->
+	</div>
 	<footer id="footer" class="top-space">
 
 			<div class="footer1">
