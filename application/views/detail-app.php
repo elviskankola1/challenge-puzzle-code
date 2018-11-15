@@ -108,8 +108,6 @@
                                     * Mettre en place un cadre de concertation et d'échange de connaissances par la Formation continue de
                                     de l'Elite des finances (Experts comptables, Etudiants, Cadres des Entreprises, Chercheurs)
                                     * Placement de candidats Masters Juniors (Issus du dernier cycle du parcourt académique)
-    
-    
                                 </p>
                             </div>
                         </div>
