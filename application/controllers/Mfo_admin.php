@@ -100,7 +100,7 @@ class Mfo_admin extends CI_Controller {
         
         if ( ! $this->upload->do_upload()){
             $data = array('error' => $this->upload->display_errors());
-            $this->load->view('index', $data);
+            $this->load->view('admin_view/add_blog', $data);
         }else{
 
             $title = strip_tags($this->input->post('titre'));
@@ -110,7 +110,7 @@ class Mfo_admin extends CI_Controller {
             foreach ($chemin as $key => $value) {
                 if ($key==='file_name') {
 
-                    $file= './assets/uploads/'.$value;
+                    $file= './assets/uploads/blog'.$value;
                     break;
                 }
             }
