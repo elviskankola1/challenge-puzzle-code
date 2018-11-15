@@ -18,7 +18,7 @@ class Welcome extends CI_Controller {
 	}
 //========================================================================================================
 	public function formation(){
-		$data['formation'] = $this->main_model->Get_All_Formation();
+		$data['form'] = $this->main_model->Get_All_Formation();
 		$this->load->view('formation',$data);
 	}
 //========================================================================================================
