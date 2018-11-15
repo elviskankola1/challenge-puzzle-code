@@ -22,7 +22,7 @@ class Mfo_admin extends CI_Controller {
 ========================================================================================================================*/
     public function Add_Formation_In_database(){
 
-        $config['upload_path'] = './assets/uploads/form';
+        $config['upload_path'] = './assets/uploads/app';
 		$config['allowed_types'] = 'jpg|JPG|PNG|png';
 		$config['max_size']	= '500';
 		$config['max_width']  = '1024';
@@ -33,7 +33,7 @@ class Mfo_admin extends CI_Controller {
             $data = array('error' => $this->upload->display_errors());
             $this->load->view('admin_view/header_admin');
             $this->load->view('admin_view/nav_admin');
-            $this->load->view('admin_view/add_form', $data);
+            $this->load->view('index', $data);
         }else{
 
             $title = strip_tags($this->input->post('titre'));
@@ -43,7 +43,7 @@ class Mfo_admin extends CI_Controller {
             foreach ($chemin as $key => $value) {
                 if ($key==='file_name') {
 
-                    $file= './assets/uploads/form/'.$value;
+                    $file= './assets/uploads/'.$value;
                     $this->admin_model->Add_Formation($title,$description,$file);
                 }
             }
@@ -74,11 +74,12 @@ class Mfo_admin extends CI_Controller {
 
                     $file= './assets/uploads/app/'.$value;
                 }
-                $this->admin_model->Add_Application($title,$description,$file);
-               
-                $this->load->view('admin_view/nav_admin');
-                $this->load->view('admin_view/add_app');
+                
             }
+            $this->admin_model->Add_Application($title,$description,$file);
+            $this->load->view('admin_view/header_admin');
+            $this->load->view('admin_view/nav_admin');
+            $this->load->view('admin_view/add_app');
         }
           
     }
@@ -104,7 +105,7 @@ class Mfo_admin extends CI_Controller {
             foreach ($chemin as $key => $value) {
                 if ($key==='file_name') {
 
-                    $file= './assets/uploads/blog'.$value;
+                    $file= './assets/uploads/'.$value;
                 }
             }
         }
