@@ -40,11 +40,11 @@ class Welcome extends CI_Controller {
 	}
 //========================================================================================================
 	public function contactez_nous(){
-		$name_user = strip_tags($this->input_>post('nom'));
+		$name_user = strip_tags($this->input->post('nom'));
 		$mail_user = strip_tags($this->input->post('mail'));
 		$number_user = strip_tags($this->input->post('phone'));
 		$message_user =strip_tags( $this->input->post('message'));
-		if (filter_var($mail,FILTER_VALIDATE_EMAIL == true) && preg_match('#^(097|085|084|090)+[0-9]{7}$#',$phone)) {
+		if (filter_var($mail_user,FILTER_VALIDATE_EMAIL) && preg_match('#^(097|085|084|090)+[0-9]{7}$#',$number_user)) {
 			$this->main_model-> Add_Message_Contact($name_user,$mail_user,$number_user,$message_user);
 			$this->load->view('contact');
 		}else{
