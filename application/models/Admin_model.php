@@ -70,7 +70,7 @@
 
         public function Get_One_Formation($id){
 
-            $query = $this->db->where('id_formation',$id)->get($this->table_formation);
+            $query = $this->db->where('id_formation',$id)->get($this->table_formation)->result();
             return $query;
         }
         //------------------------------------------------------------------------------
@@ -81,7 +81,7 @@
         }
         public function Get_All_Msg(){
 
-            return $this->db->select()->order_by('id_user','desc')->get($this->table_formation)->result();
+            return $this->db->select()->order_by('id_user','desc')->get($this->table_contact)->result();
             
         }
         
