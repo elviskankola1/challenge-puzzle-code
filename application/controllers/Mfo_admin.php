@@ -91,7 +91,7 @@ class Mfo_admin extends CI_Controller {
 //--------------------------------------------------------------------------------------------
     public function Add_item_blog_In_database(){
 
-        $config['upload_path'] = './assets/uploads/blog/';
+        $config['upload_path'] = './assets/uploads/blog';
 		$config['allowed_types'] = 'jpg|JPG|PNG|png';
 		$config['max_size']	= '500';
 		$config['max_width']  = '1024';
