@@ -73,6 +73,8 @@
 			<?php endforeach?>
 		</div>
 	</div>
+	<?php else:?>
+		<h1 style="text-align:center;">Aucune Application...</h1>
 	<?php endif?>
 	<footer id="footer" class="top-space">
 
@@ -139,12 +141,5 @@
 			</div>
 	
 		</footer>		
-
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/jQuery.headroom.min.js"></script>
-	<script src="assets/js/template.js"></script>
 </body>
 </html>
