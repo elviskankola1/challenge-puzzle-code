@@ -22,15 +22,15 @@
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav pull-right">
-							<li class="active"><a href="index.html">Accueil</a></li>
-							<li><a href="about.html">Apropos</a></li>
+							<li class="active"><a href="<?php echo base_url();?>">Accueil</a></li>
+							<li><a href="<?php echo base_url('index.php/welcome/apropos');?>">Apropos</a></li>
 							<li>
-								<a href="formation.html">Formation</a>
+								<a href="<?php echo base_url('index.php/welcome/formation');?>">Formation</a>
 							</li>
 							<li>
-								<a href="app.html">Logiciel</a>
+								<a href="<?php echo base_url('index.php/welcome/application');?>">Logiciel</a>
 							</li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="<?php echo base_url('index.php/welcome/contact');?>">Contact</a></li>
 						</ul>
 					</div>
 				</div>
