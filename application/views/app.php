@@ -59,18 +59,21 @@
 		</ol>
 
 		<div class="row">
+			<?php foreach($application as $value):?>
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
-						<h4>Titre App</h4>
+						<p><img src="<?php echo base_url($value->file_app);?>" alt=""></p>
+						<h4><?php echo $value->titre_app;?></h4>
 						<p><a class="btn btn-action btn-lg" role="button" href="detail-app.html">Detail</a></p>
 					</div>
 				</div>
 
 			</aside>
+			<?php endforeach?>
 		</div>
 	</div>
+	<?php endif?>
 	<footer id="footer" class="top-space">
 
 			<div class="footer1">
