@@ -44,6 +44,7 @@ class Mfo_admin extends CI_Controller {
                 if ($key==='file_name') {
 
                     $file= './assets/uploads/form/'.$value;
+                    break;
                 }
             }
              $this->admin_model->Add_Formation($title,$description,$file);
