@@ -51,7 +51,7 @@
 					<h1 class="page-title">Contactez nous</h1>
 				</header>
 				<br>
-					<form>
+					<?php echo form_open();?>
 						<div class="row">
 							<div class="col-sm-4">
 								<input class="form-control" type="text" placeholder="Entrez votre nom">
@@ -75,7 +75,7 @@
 								<input class="btn btn-action" type="submit" value="Envoyer">
 							</div>
 						</div>
-					</form>
+					<?php echo form_close();?>
 
 			</article>
 			<aside class="col-sm-3 sidebar sidebar-right">
