@@ -43,7 +43,7 @@ class Mfo_admin extends CI_Controller {
             foreach ($chemin as $key => $value) {
                 if ($key==='file_name') {
 
-                    $file= './assets/uploads/form'.$value;
+                    $file= './assets/uploads/form/'.$value;
                     $this->admin_model->Add_Formation($title,$description,$file);
                 }
             }
@@ -72,7 +72,7 @@ class Mfo_admin extends CI_Controller {
             foreach ($chemin as $key => $value) {
                 if ($key==='file_name') {
 
-                    $file= './assets/uploads/app'.$value;
+                    $file= './assets/uploads/app/'.$value;
                 }
                 $this->admin_model->Add_Application($title,$description,$file);
                
@@ -104,7 +104,7 @@ class Mfo_admin extends CI_Controller {
             foreach ($chemin as $key => $value) {
                 if ($key==='file_name') {
 
-                    $file= './assets/uploads/'.$value;
+                    $file= './assets/uploads/blog'.$value;
                 }
             }
         }
