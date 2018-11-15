@@ -91,22 +91,20 @@ class Mfo_admin extends CI_Controller {
 //--------------------------------------------------------------------------------------------
     public function Add_item_blog_In_database(){
 
-        $config['upload_path'] = './assets/uploads/blog';
+        $config['upload_path'] = './assets/uploads/blog/';
 		$config['allowed_types'] = 'jpg|JPG|PNG|png';
-		$config['max_size']	= '1024';
+		$config['max_size']	= '500';
 		$config['max_width']  = '1024';
-		$config['max_height']  = '1024';
+		$config['max_height']  = '768';
         $this->load->library('upload', $config);
         
         if ( ! $this->upload->do_upload()){
-            
-            $data = array('error' => $this->upload->display_errors());
+            var_dump($config);
+            /*
             $this->load->view('admin_view/header_admin');
             $this->load->view('admin_view/nav_admin');
-            $this->load->view('admin_view/add_blog', $data);
-
+            $this->load->view('admin_view/add_blog');*/
         }else{
-
             $title = strip_tags($this->input->post('titre'));
             $description = strip_tags($this->input->post('description'));
             $chemin= $this->upload->data();
@@ -117,12 +115,14 @@ class Mfo_admin extends CI_Controller {
                     $file= './assets/uploads/blog/'.$value;
                     break;
                 }
+                
             }
-            $this->admin_model->Add_Item_Blog($title,$description,$file); 
+            $this->admin_model->Add_Item_Blog($title,$description,$file);
             $this->load->view('admin_view/header_admin');
             $this->load->view('admin_view/nav_admin');
-            $this->load->view('admin_view/add_blog', $data); 
+            $this->load->view('admin_view/add_blog');
         }
+          
        
     }
 /*========================================================================================================================
