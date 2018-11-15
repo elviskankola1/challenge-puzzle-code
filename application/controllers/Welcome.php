@@ -34,6 +34,8 @@ class Welcome extends CI_Controller {
 	}
 //========================================================================================================
 	public function detail_formation(){
+		$id_form = $this->uri->segment(4);
+		$data['form'] = $this->main_model->Get_One_Application($id_form);
 		$this->load->view('detail-formation');
 	}
 //========================================================================================================
