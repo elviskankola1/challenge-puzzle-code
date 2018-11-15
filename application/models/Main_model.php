@@ -34,14 +34,14 @@
 
         public function Get_All_Formation(){
 
-            $query = $this->db->select()->get($this->table_formation);
-            return $query;
+            return $this->db->select()->get($this->table_formation)->result();
+            
         }
 
         public function Get_All_Application(){
 
-            $query = $this->db->select()->get($this->table_application);
-            return $query;
+            return $this->db->select()->get($this->table_application)->result();
+           
         }
 
         public function Get_One_Formation($id){
