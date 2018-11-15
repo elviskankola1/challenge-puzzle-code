@@ -38,9 +38,9 @@
         //------------------------------------------------------------------
         public function Add_Item_Blog($titre,$description,$file){
 
-            $this->db->set('titre_app',$titre);
-            $this->db->set('description_app',$description);
-            $this->db->set('file_app',$file);
+            $this->db->set('titre_item',$titre);
+            $this->db->set('description_item',$description);
+            $this->db->set('file_item',$file);
             return $this->db->insert($this->table_blog);
         }
 
