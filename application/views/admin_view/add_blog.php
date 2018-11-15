@@ -13,7 +13,12 @@
                                         <input type="text" class="form-control" placeholder="entez un titre" name="titre">
                                     </div>
                                 </div>
-                                <input type="file" name="userfile" width="50%"><br>
+                                <div class="form-group">
+                                    <div  class="input-group" style="width:60%;" >
+                                        <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
+                                        <input type="file" class="form-control" name="userfile" >
+                                    </div>
+                                </div>
                                 <div class="form-group" >
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
