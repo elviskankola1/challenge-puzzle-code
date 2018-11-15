@@ -6,7 +6,7 @@
 			<div class="login-panel panel panel-default" style="width:100%;">
 				<div class="panel-heading">Formulaire d'ajout</div>
 				<div class="panel-body">
-					<?php echo form_open('index.php/mfo_admin/Add_item_blog_In_database');?>
+					<?php echo form_open_multipart('index.php/mfo_admin/Add_item_blog_In_database');?>
                     <div class="form-group">
                                     <div class="input-group"  style="width:60%;">
                                         <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
