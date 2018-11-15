@@ -31,6 +31,8 @@ class Mfo_admin extends CI_Controller {
         
         if ( ! $this->upload->do_upload()){
             $data = array('error' => $this->upload->display_errors());
+            $this->load->view('admin_view/header_admin');
+            $this->load->view('admin_view/nav_admin');
             $this->load->view('index', $data);
         }else{
 
@@ -59,10 +61,10 @@ class Mfo_admin extends CI_Controller {
         $this->load->library('upload', $config);
         
         if ( ! $this->upload->do_upload()){
-            $data['error'] = $this->upload->display_errors();
-            $this->load->view('admin_view/add_app', $data);
+            $this->load->view('admin_view/header_admin');
+            $this->load->view('admin_view/nav_admin');
+            $this->load->view('admin_view/add_app');
         }else{
-
             $title = strip_tags($this->input->post('titre'));
             $description = strip_tags($this->input->post('description'));
             $chemin= $this->upload->data();
@@ -73,7 +75,9 @@ class Mfo_admin extends CI_Controller {
                     $file= './assets/uploads/'.$value;
                 }
                 $this->admin_model->Add_Application($title,$description,$file);
-                $this->load->view('admin_view/add_app', $data);
+                $this->load->view('admin_view/header_admin');
+                $this->load->view('admin_view/nav_admin');
+                $this->load->view('admin_view/add_app');
             }
         }
           
