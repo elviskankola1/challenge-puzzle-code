@@ -12,6 +12,7 @@
         private $table_formation = 'mfo_formation';
         private $table_application = 'mfo_application';
         private $table_blog = 'mfo_blog';
+        private $table_contact = 'mfo_contact';
 
         function __construct(){
            
@@ -78,9 +79,9 @@
             $query = $this->db->where('id_app',$id)->get($this->table_application);
             return $query;
         }
-        public function Get_All_Formation(){
+        public function Get_All_Msg(){
 
-            return $this->db->select()->order_by('id_formation','desc')->get($this->table_formation)->result();
+            return $this->db->select()->order_by('id_user','desc')->get($this->table_formation)->result();
             
         }
         
