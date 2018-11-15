@@ -6,7 +6,6 @@
 			<div class="login-panel panel panel-default" style="width:100%;">
 				<div class="panel-heading">Formulaire d'ajout</div>
 				<div class="panel-body">
-                    <?php echo $error;?>
 					<?php echo form_open_multipart('index.php/mfo_admin/Add_Application_In_database');?>
                     <div class="form-group">
                                     <div class="input-group"  style="width:60%;">
