@@ -15,10 +15,10 @@
        
         public function Add_Message_Contact($name,$mail,$phone,$message){
 
-            $this->db->set('',$name);
-            $this->db->set('',$mail);
-            $this->db->set('',$phone);
-            $this->db->set('',$message);
+            $this->db->set('nom_user',$name);
+            $this->db->set('adresse_user',$mail);
+            $this->db->set('telephone_user',$phone);
+            $this->db->set('message_user',$message);
             return $this->db->insert($this->table_contact);
         }
 
