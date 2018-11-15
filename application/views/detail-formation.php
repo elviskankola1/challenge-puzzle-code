@@ -69,6 +69,9 @@
 			</article>
 		</div>
 	</div>
+	<?php else:?>
+		<h1> Detail non trouver!</h1>
+	<?php endif?>
 	<footer id="footer" class="top-space">
 
 			<div class="footer1">
