@@ -61,7 +61,7 @@
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
+						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt=""></p>
 						<h4>Titre Formation</h4>
 						<p><a class="btn btn-action btn-lg" role="button" >Detail</a></p>
 					</div>
@@ -71,7 +71,7 @@
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
+						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt=""></p>
 						<h4>Titre Formation</h4>
 						<p><a class="btn btn-action btn-lg" role="button" href="detail-formation.html">Detail</a></p>
 
@@ -82,7 +82,7 @@
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
+						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt=""></p>
 						<h4>Titre Formation</h4>
 						<p><a class="btn btn-action btn-lg" role="button" href="detail-formation.html" href="detail-formation.html">Detail</a></p>
 					</div>
@@ -92,7 +92,7 @@
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
+						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt=""></p>
 						<h4>Titre Formation</h4>
 						<p><a class="btn btn-action btn-lg" role="button" href="detail-formation.html">Detail</a></p>
 					</div>
@@ -102,7 +102,7 @@
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
+						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt=""></p>
 						<h4>Titre Formation</h4>
 						<p><a class="btn btn-action btn-lg" role="button" href="detail-formation.html">Detail</a></p>
 					</div>
@@ -112,7 +112,7 @@
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt="" ></p>
+						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt="" ></p>
 						<h4>Titre Formation</h4>
 						<p><a class="btn btn-action btn-lg" role="button" href="detail-formation.html">Detail</a></p>
 					</div>
