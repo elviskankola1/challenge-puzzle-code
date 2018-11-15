@@ -22,7 +22,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('formation',$data);
 	}
 //========================================================================================================
-	public function app(){
+	public function application(){
 		$data['application'] = $this->main_model->Get_All_Application();
 		$this->load->view('app',$data);
 	}
