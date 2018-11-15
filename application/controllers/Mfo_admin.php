@@ -22,7 +22,7 @@ class Mfo_admin extends CI_Controller {
 ========================================================================================================================*/
     public function Add_Formation_In_database(){
 
-        $config['upload_path'] = './assets/uploads/app';
+        $config['upload_path'] = './assets/uploads/form';
 		$config['allowed_types'] = 'jpg|JPG|PNG|png';
 		$config['max_size']	= '500';
 		$config['max_width']  = '1024';
@@ -43,7 +43,7 @@ class Mfo_admin extends CI_Controller {
             foreach ($chemin as $key => $value) {
                 if ($key==='file_name') {
 
-                    $file= './assets/uploads/'.$value;
+                    $file= './assets/uploads/form'.$value;
                     $this->admin_model->Add_Formation($title,$description,$file);
                 }
             }
@@ -53,7 +53,7 @@ class Mfo_admin extends CI_Controller {
 //------------------------------------------------------------------------------
     public function Add_Application_In_database(){
 
-        $config['upload_path'] = './assets/uploads/form';
+        $config['upload_path'] = './assets/uploads/app';
 		$config['allowed_types'] = 'jpg|JPG|PNG|png';
 		$config['max_size']	= '500';
 		$config['max_width']  = '1024';
@@ -72,7 +72,7 @@ class Mfo_admin extends CI_Controller {
             foreach ($chemin as $key => $value) {
                 if ($key==='file_name') {
 
-                    $file= './assets/uploads/'.$value;
+                    $file= './assets/uploads/app'.$value;
                 }
                 $this->admin_model->Add_Application($title,$description,$file);
                 $this->load->view('admin_view/header_admin');
