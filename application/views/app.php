@@ -48,7 +48,8 @@
 					</ul>
 				</div>
 			</div>
-		</div>  
+		</div>
+	<?php if($application):?>  
 	<header id="head" class="secondary"></header>
 	<div class="container">
 		
@@ -68,61 +69,8 @@
 				</div>
 
 			</aside>
-			<aside class="col-md-4 sidebar sidebar-left">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
-						<h4>Titre App</h4>
-						<p><a class="btn btn-action btn-lg" role="button" href="detail-app.html">Detail</a></p>
-
-					</div>
-				</div>
-
-			</aside>
-			<aside class="col-md-4 sidebar sidebar-left">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
-						<h4>Titre App</h4>
-						<p><a class="btn btn-action btn-lg" role="button" href="detail-app.html">Detail</a></p>
-					</div>
-				</div>
-
-			</aside>
-			<aside class="col-md-4 sidebar sidebar-left">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
-						<h4>Titre App</h4>
-						<p><a class="btn btn-action btn-lg" role="button"href="detail-app.html">Detail</a></p>
-					</div>
-				</div>
-
-			</aside>
-			<aside class="col-md-4 sidebar sidebar-left">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
-						<h4>Titre App</h4>
-						<p><a class="btn btn-action btn-lg" role="button" href="detail-app.html">Detail</a></p>
-					</div>
-				</div>
-
-			</aside>
-			<aside class="col-md-4 sidebar sidebar-left">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<p><img src="assets/images/3.jpg" alt=""></p>
-						<h4>Titre App</h4>
-						<p><a class="btn btn-action btn-lg" role="button" href="detail-app.html">Detail</a></p>
-					</div>
-				</div>
-
-			</aside>
-			
-
 		</div>
-	</div>	<!-- /container -->
+	</div>
 	<footer id="footer" class="top-space">
 
 			<div class="footer1">
