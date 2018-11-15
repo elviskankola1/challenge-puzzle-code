@@ -28,8 +28,9 @@ class Welcome extends CI_Controller {
 	}
 //========================================================================================================
 	public function detail_app(){
-		$id_article = $this->uri->segment();
-		$this->load->view('detail-app');
+		$id_app = $this->uri->segment(4);
+		$data['app'] = $this->main_model->Get_One_Application($id_app);
+		$this->load->view('detail-app',$data);
 	}
 //========================================================================================================
 	public function detail_formation(){
