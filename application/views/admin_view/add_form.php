@@ -25,7 +25,7 @@
                                         <textarea cols="65" rows="5" placeholder="  entrez la description" width="100%" name="description"></textarea>
                                     </div>
                                 </div>
-							<a href="" class="btn btn-primary">Publier</a></fieldset>
+							<button class="btn btn-primary">Publier</button></fieldset>
 					<?php echo form_close();?>
 				</div>
 			</div>
