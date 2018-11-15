@@ -99,11 +99,10 @@ class Mfo_admin extends CI_Controller {
         $this->load->library('upload', $config);
         
         if ( ! $this->upload->do_upload()){
-            var_dump($config);
-            /*
+           
             $this->load->view('admin_view/header_admin');
             $this->load->view('admin_view/nav_admin');
-            $this->load->view('admin_view/add_blog');*/
+            $this->load->view('admin_view/add_blog');
         }else{
             $title = strip_tags($this->input->post('titre'));
             $description = strip_tags($this->input->post('description'));
