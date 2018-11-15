@@ -51,7 +51,8 @@
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="<?php echo base_url($value->file_app);?>" alt=""></p>
+                        <p><img src="<?php echo base_url($value->file_app);?>" alt=""></p>
+                        <input class="btn btn-action" type="submit" value="souscrire pour cette application">
 					</div>
 				</div>
 
@@ -133,11 +134,6 @@
             </div>
     
         </footer>	
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/jQuery.headroom.min.js"></script>
-	<script src="assets/js/template.js"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5be02e37077f4460"></script>
 </body>
 </html>
