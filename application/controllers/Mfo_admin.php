@@ -93,14 +93,18 @@ class Mfo_admin extends CI_Controller {
 
         $config['upload_path'] = './assets/uploads/blog';
 		$config['allowed_types'] = 'jpg|JPG|PNG|png';
-		$config['max_size']	= '500';
+		$config['max_size']	= '1024';
 		$config['max_width']  = '1024';
-		$config['max_height']  = '768';
+		$config['max_height']  = '1024';
         $this->load->library('upload', $config);
         
         if ( ! $this->upload->do_upload()){
+            
             $data = array('error' => $this->upload->display_errors());
+            $this->load->view('admin_view/header_admin');
+            $this->load->view('admin_view/nav_admin');
             $this->load->view('admin_view/add_blog', $data);
+
         }else{
 
             $title = strip_tags($this->input->post('titre'));
@@ -114,7 +118,10 @@ class Mfo_admin extends CI_Controller {
                     break;
                 }
             }
-            $this->admin_model->Add_Item_Blog($title,$description,$file);  
+            $this->admin_model->Add_Item_Blog($title,$description,$file); 
+            $this->load->view('admin_view/header_admin');
+            $this->load->view('admin_view/nav_admin');
+            $this->load->view('admin_view/add_blog', $data); 
         }
        
     }
