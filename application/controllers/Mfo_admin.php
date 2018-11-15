@@ -110,7 +110,7 @@ class Mfo_admin extends CI_Controller {
             foreach ($chemin as $key => $value) {
                 if ($key==='file_name') {
 
-                    $file= './assets/uploads/blog'.$value;
+                    $file= './assets/uploads/blog/'.$value;
                     break;
                 }
             }
