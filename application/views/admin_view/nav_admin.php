@@ -8,7 +8,7 @@
 				<a class="navbar-brand" href="#">TABLE DE GESTION</a>
 				<ul class="nav navbar-top-links navbar-right">
 					<li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-						<em class="fa fa-envelope"></em><span class="label label-danger">15</span>
+						<em class="fa fa-envelope"></em><span class="label label-danger"><?php echo $nb_msg;?></span>
 					</a>
 						<ul class="dropdown-menu dropdown-messages">
 							<li>
