@@ -59,8 +59,8 @@ class Mfo_admin extends CI_Controller {
         $this->load->library('upload', $config);
         
         if ( ! $this->upload->do_upload()){
-            $data = array('error' => $this->upload->display_errors());
-            $this->load->view('index', $data);
+            $data['error'] = $this->upload->display_errors();
+            $this->load->view('add_app', $data);
         }else{
 
             $title = strip_tags($this->input->post('titre'));
