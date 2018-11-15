@@ -78,6 +78,10 @@
             $query = $this->db->where('id_app',$id)->get($this->table_application);
             return $query;
         }
+        public function Get_All_Formation(){
 
+            return $this->db->select()->order_by('id_formation','desc')->get($this->table_formation)->result();
+            
+        }
         
     }
