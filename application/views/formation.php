@@ -48,7 +48,8 @@
 					</ul>
                 </div>
             </div>
-        </div> 
+		</div> 
+	<?php if($form):?>
 	<header id="head" class="secondary"></header>
 	<div class="container">
 		
@@ -58,71 +59,22 @@
 		</ol><br><br>
 
 		<div class="row">
+			<?php foreach($form as $value):?>
 			<aside class="col-md-4 sidebar sidebar-left">
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt=""></p>
-						<h4>Titre Formation</h4>
+						<p><img src="<?php echo base_url($value->file_formation);?>" alt=""></p>
+						<h4><?php echo $value->titre_formation;?></h4>
 						<p><a class="btn btn-action btn-lg" role="button" >Detail</a></p>
 					</div>
 				</div>
-
 			</aside>
-			<aside class="col-md-4 sidebar sidebar-left">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt=""></p>
-						<h4>Titre Formation</h4>
-						<p><a class="btn btn-action btn-lg" role="button" href="detail-formation.html">Detail</a></p>
-
-					</div>
-				</div>
-
-			</aside>
-			<aside class="col-md-4 sidebar sidebar-left">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt=""></p>
-						<h4>Titre Formation</h4>
-						<p><a class="btn btn-action btn-lg" role="button" href="detail-formation.html" href="detail-formation.html">Detail</a></p>
-					</div>
-				</div>
-
-			</aside>
-			<aside class="col-md-4 sidebar sidebar-left">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt=""></p>
-						<h4>Titre Formation</h4>
-						<p><a class="btn btn-action btn-lg" role="button" href="detail-formation.html">Detail</a></p>
-					</div>
-				</div>
-
-			</aside>
-			<aside class="col-md-4 sidebar sidebar-left">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt=""></p>
-						<h4>Titre Formation</h4>
-						<p><a class="btn btn-action btn-lg" role="button" href="detail-formation.html">Detail</a></p>
-					</div>
-				</div>
-
-			</aside>
-			<aside class="col-md-4 sidebar sidebar-left">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<p><img src="<?php echo base_url('assets/images/3.jpg');?>" alt="" ></p>
-						<h4>Titre Formation</h4>
-						<p><a class="btn btn-action btn-lg" role="button" href="detail-formation.html">Detail</a></p>
-					</div>
-				</div>
-
-			</aside>
-			
-
+			<?php endforeach?>
 		</div>
 	</div>
+	<?php else:?>
+		<h2 style="text-align:center;"> Pas de Formation</h2>
+	<?php endif?>
 	<footer id="footer" class="top-space">
 
 			<div class="footer1">
