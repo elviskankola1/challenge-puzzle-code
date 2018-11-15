@@ -65,7 +65,7 @@
 					<div class="col-xs-12">
 						<p><img src="<?php echo base_url($value->file_formation);?>" alt=""></p>
 						<h4><?php echo $value->titre_formation;?></h4>
-						<p><a href="<?php echo base_url('index/welcome/detail_formation/').$value->id_formation;?>" class="btn btn-action btn-lg" role="button" >Detail</a></p>
+						<p><a href="<?php echo base_url('index.php/welcome/detail_formation/').$value->id_formation;?>" class="btn btn-action btn-lg" role="button" >Detail</a></p>
 					</div>
 				</div>
 			</aside>
