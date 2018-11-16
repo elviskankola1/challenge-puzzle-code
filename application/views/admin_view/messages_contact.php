@@ -12,7 +12,10 @@
 			</div>
 				<div class="panel-heading"><?php echo $value->nom_user;?></div>
 				<div class="panel-body">
-                    <b><p><?php echo $value->message_user?></p></b>
+                    <b>
+                        <h5><?php echo $value->adresse_user;?>/<?php echo $value->?></h5>
+                        <p><?php echo $value->message_user?></p>
+                    </b>
 				</div>
 			</div>
         </div>
