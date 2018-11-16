@@ -25,7 +25,7 @@
         </div>
         <?php endforeach?>
         <?php else:?>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><b><h1 style="text-align:center;">aucun message!</h1>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><b><h1 style="text-align:center;">aucun message!  <img src="<?php echo base_url('assets/images/msg1.png');?>" width="10%"></h1>
         <?php endif?>
 	</div>
 </body>
