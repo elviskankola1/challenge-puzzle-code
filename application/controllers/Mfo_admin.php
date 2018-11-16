@@ -179,5 +179,10 @@ class Mfo_admin extends CI_Controller {
         $this->load->view('admin_view/footer_admin');
     }
 
+    public function delete_message(){
+
+        $id = $this->uri->segment();
+    }
+
 
 }
