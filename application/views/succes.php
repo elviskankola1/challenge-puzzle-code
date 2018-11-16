@@ -16,13 +16,10 @@
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/main.css');?>">
 </head>
 
-<body>
-		<div class="col-md-4" width="10%">
+<body><br><br><br><br><br>
+		<div class="col-md-4" width="20%">
 			<article class="col-md-8 maincontent">
-				<header class="page-header">
-					<h1 class="page-title">SUCCES</h1>
-				</header>
-				<p>peration effectuee!</p>
+					<h3 class="page-title">SUCCES DE L'ENVOI DU MESSAGE!</h3>
 			</article>
 			
 		</div>
