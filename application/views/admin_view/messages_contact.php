@@ -17,6 +17,8 @@
                         <p><?php echo $value->message_user?></p>
                     </b>
                     <a href="<?php echo base_url('index.php/mfo_admin/delete_message/').$value->id_user;?>">
+                        <img src="<?php echo base_url('assets/images/sup1.png');?>" width="5%">
+                    </a>
 				</div>
 			</div>
         </div>
