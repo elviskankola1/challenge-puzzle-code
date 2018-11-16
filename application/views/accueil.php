@@ -48,7 +48,7 @@
 				<h1 class="lead">Vivez la solution en temps reel</h1>
 				<p class="tagline">Notre cabinet est votre solution</p>
 				<p><a class="btn btn-default btn-lg" role="button" href="<?php echo base_url('index.php/welcome/formation');?>">formation</a> 
-					<a class="btn btn-action btn-lg" role="button">Logiciel</a></p>
+					<a class="btn btn-action btn-lg" role="button" href="<?php echo base_url('index.php/welcome/application');?>">Logiciel</a></p>
 			</div>
 		</div>
 	</header>
