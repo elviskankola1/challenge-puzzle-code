@@ -17,7 +17,7 @@
 </head>
 
 <body>
-		<div class="row">
+		<div class="col-md-4" width="10%">
 			<article class="col-md-8 maincontent">
 				<header class="page-header">
 					<h1 class="page-title">SUCCES</h1>
