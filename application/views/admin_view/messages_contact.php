@@ -16,7 +16,7 @@
                         <h5><a href="mailto:<?php echo $value->adresse_user;?>"><?php echo $value->adresse_user;?></a>/<?php echo $value->telephone_user;?></h5>
                         <p><?php echo $value->message_user?></p>
                     </b>
-                    <a href="<?php echo base_url('index.php/mfo_admin/delete_message');?>">
+                    <a href="<?php echo base_url('index.php/mfo_admin/delete_message/').$value->id_user;?>">
 				</div>
 			</div>
         </div>
