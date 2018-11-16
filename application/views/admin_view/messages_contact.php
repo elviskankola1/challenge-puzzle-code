@@ -16,8 +16,9 @@
                         <h5><a href="mailto:<?php echo $value->adresse_user;?>"><?php echo $value->adresse_user;?></a>/<?php echo $value->telephone_user;?></h5>
                         <p><?php echo $value->message_user?></p>
                     </b>
+                    <hr>
                     <a href="<?php echo base_url('index.php/mfo_admin/delete_message/').$value->id_user;?>">
-                        <img src="<?php echo base_url('assets/images/sup1.png');?>" width="5%">
+                        <img src="<?php echo base_url('assets/images/sup1.png');?>" width="4%">
                     </a>
 				</div>
 			</div>
