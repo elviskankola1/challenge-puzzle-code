@@ -84,7 +84,7 @@
 			<li><a href="<?php echo base_url('index.php/mfo_admin/Page_Add_App');?>"><em class="fa fa-calendar">&nbsp;</em> Publier une application</a></li>
 			<li><a href="<?php echo base_url('index.php/mfo_admin/Page_Add_Form');?>"><em class="fa fa-calendar">&nbsp;</em> Publier une formation</a></li>
 			<li><a href="<?php echo base_url('index.php/mfo_admin/Page_Add_Item_Blog');?>"><em class="fa fa-calendar">&nbsp;</em> Publier une article</a></li>
-			<li><a href="<?php echo base_url('index.php/mfo_admin/Page_Messages_contact');?>"><em class="fa fa-calendar">&nbsp;</em> Publier une article</a></li>
+			<li><a href="<?php echo base_url('index.php/mfo_admin/Page_Messages_contact');?>"><em class="fa fa-calendar">&nbsp;</em> Tous les messages</a></li>
 			
 			<li><a href="<?php echo base_url('mfo/login');?>"><em class="fa fa-power-off">&nbsp;</em> Deconnexion</a></li>
 		</ul>
