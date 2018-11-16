@@ -25,7 +25,7 @@
         </div>
         <?php endforeach?>
         <?php else:?>
-            <h2>aucun message!</h2>
+            <br><br><br><br><br><br><br><br><h2>aucun message!</h2>
         <?php endif?>
 	</div>
 </body>
