@@ -65,7 +65,7 @@
     <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<div class="profile-sidebar">
 			<div class="profile-userpic">
-				<img src="<?php echo base_url('assets/images/3.jpg');?>" class="img-responsive" alt="">
+				<img src="<?php echo base_url('assets/images/3.jpg');?>" class="img-responsive" alt="image">
 			</div>
 			<div class="profile-usertitle">
 				<div class="profile-usertitle-name">elvis kankola</div>
