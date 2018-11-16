@@ -6,10 +6,10 @@
         <? if($msg): ?>
         <?php foreach($msg as $value):?>
         <div class="login-panel panel panel-default" style="width:100%;">
-            <div class="panel-body">
             <div class="profile-userpic">
 				<img src="<?php echo base_url('assets/images/3.jpg');?>" class="img-responsive" alt="image">
 			</div>
+            <div class="panel-body">
 				<div class="panel-heading"><?php echo $value->nom_user;?></div>
 				<div class="panel-body">
                     <b>
