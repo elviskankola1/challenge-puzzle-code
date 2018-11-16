@@ -89,7 +89,7 @@
 ========================================================================================================================*/ 
         public function Delete_One_Message($id){
 
-            $query = $this->db->where('id_user',$id)->get($this->table_contact)->result();
+            $query = $this->db->where('id_user',$id)->delete($this->table_contact)->result();
             return $query; 
         }
     }
