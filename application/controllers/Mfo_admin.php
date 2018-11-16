@@ -11,11 +11,11 @@ class Mfo_admin extends CI_Controller {
 
     
     public function index(){
-        
+
         $data['nb_msg'] = $this->admin_model->Count_Message();
         $this->load->view('admin_view/header_admin');
         $this->load->view('admin_view/nav_admin',$data);
-        $this->load->view('admin_view/index');
+        $this->load->view('admin_view/index',$data);
         $this->load->view('admin_view/footer_admin');
 
     }
