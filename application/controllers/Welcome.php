@@ -48,6 +48,7 @@ class Welcome extends CI_Controller {
 			$this->main_model-> Add_Message_Contact($name_user,$mail_user,$number_user,$message_user);
 			$this->load->view('succes');
 			$this->load->view('contact');
+			
 		}else{
 			
 			$this->load->view('contact');
