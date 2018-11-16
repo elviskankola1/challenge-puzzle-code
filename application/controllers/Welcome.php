@@ -17,8 +17,8 @@ class Welcome extends CI_Controller {
 		$this->load->view('contact');
 	}
 //=========================================================================================================
-	public function souscription(){
-		$this->load->view('contact');
+	public function souscription_formation(){
+		$this->load->view('souscription_form');
 	}
 //========================================================================================================
 	public function formation(){
