@@ -10,7 +10,7 @@
             <div class="profile-userpic">
 				<img src="<?php echo base_url('assets/images/3.jpg');?>" class="img-responsive" alt="image">
 			</div>
-				<div class="panel-heading"><?php echo "     ".$value->nom_user;?></div>
+				<div class="panel-heading"><?php echo $value->nom_user;?></div>
 				<div class="panel-body">
                     <b><p><?php echo $value->message_user?></p></b>
 				</div>
