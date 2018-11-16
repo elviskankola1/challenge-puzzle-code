@@ -46,8 +46,10 @@ class Welcome extends CI_Controller {
 		$message_user =strip_tags( $this->input->post('message'));
 		if (filter_var($mail_user,FILTER_VALIDATE_EMAIL) && preg_match('#^(097|085|084|090)+[0-9]{7}$#',$number_user)) {
 			$this->main_model-> Add_Message_Contact($name_user,$mail_user,$number_user,$message_user);
+			$this->load->view('succes');
 			$this->load->view('contact');
 		}else{
+			
 			$this->load->view('contact');
 		}
 	}
