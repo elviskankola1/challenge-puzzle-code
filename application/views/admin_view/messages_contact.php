@@ -13,9 +13,9 @@
 				<div class="panel-heading"><?php echo $value->nom_user;?></div>
 				<div class="panel-body">
                     <b>
-                        <h5><?php echo $value->adresse_user;?>/<?php echo $value->?></h5>
                         <p><?php echo $value->message_user?></p>
                     </b>
+                    <div class="panel-heading"> <h5><?php echo $value->adresse_user;?>/<?php echo $value->telephone_user;?></h5></div>
 				</div>
 			</div>
         </div>
