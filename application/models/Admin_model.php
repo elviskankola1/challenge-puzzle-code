@@ -88,8 +88,8 @@
                                             ICI LES FONCTIONS QUI SUPPRIMENT DAS DB                                                            |
 ========================================================================================================================*/ 
         public function Delete_One_Message(){
-            
-            $query = $this->db->where('id_formation',$id)->get($this->table_formation)->result();
+
+            $query = $this->db->where('id_formation',$id)->get($this->table_contact)->result();
             return $query; 
         }
     }
