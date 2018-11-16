@@ -34,7 +34,7 @@
 		<div class="divider"></div>
 		<form role="search">
 			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search">
+				<input type="text" class="form-control" placeholder="Recherche">
 			</div>
 		</form>
 		<ul class="nav menu">
