@@ -181,7 +181,8 @@ class Mfo_admin extends CI_Controller {
 
     public function delete_message(){
 
-        $id = $this->uri->segment(3);
+        $id_message = $this->uri->segment(3);
+        $this->admin_model-> Delete_One_Message($id_message);
     }
 
 
