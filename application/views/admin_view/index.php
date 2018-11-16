@@ -30,7 +30,7 @@
 				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-blue panel-widget border-right">
 						<div class="row no-padding"><em class="fa fa-xl fa-comments color-orange"></em>
-							<div class="large">52</div>
+							<div class="large"><?php echo $nb_msg;?></div>
 							<div class="text-muted">messages</div>
 						</div>
 					</div>
