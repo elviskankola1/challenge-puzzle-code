@@ -16,6 +16,10 @@ class Welcome extends CI_Controller {
 	public function contact(){
 		$this->load->view('contact');
 	}
+//=========================================================================================================
+	public function souscription(){
+		$this->load->view('contact');
+	}
 //========================================================================================================
 	public function formation(){
 		$data['form'] = $this->main_model->Get_All_Formation();
