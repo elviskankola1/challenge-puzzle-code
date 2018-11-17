@@ -85,6 +85,11 @@
             return $this->db->select()->order_by('id_user','desc')->get($this->table_contact)->result();
             
         }
+        public function Get_All_Souscription(){
+
+            return $this->db->select()->order_by('id_user','desc')->get($this->table_contact)->result();
+            
+        }
 /*========================================================================================================================
                                             ICI LES FONCTIONS QUI SUPPRIMENT DAS DB                                                            |
 ========================================================================================================================*/ 
@@ -93,7 +98,7 @@
             $query = $this->db->where('id_user',$id)->delete($this->table_contact);
             return $query; 
         }
-        public function Delete_One_souscription($id){
+        public function Delete_One_Souscription($id){
 
             $query = $this->db->where('id_user',$id)->delete($this->table_souscription_formation);
             return $query; 
