@@ -53,7 +53,7 @@
 				<div class="row widget">
 					<div class="col-xs-12">
 						<p><img src="<?php echo base_url($value->file_formation);?>" alt=""></p>
-						<a class="btn btn-action" type="submit" width="100%" href="<?php echo base_url('index.php/welcome/souscription_formation/').$value->titre_formation;?>">souscrire a cette formation</a>
+						<a class="btn btn-action" type="submit" width="100%" href="<?php echo base_url('index.php/welcome/souscription_formation/').$value->id_formation;?>">souscrire a cette formation</a>
 					</div>
 				</div>
 
