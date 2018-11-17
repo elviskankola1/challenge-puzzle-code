@@ -52,7 +52,9 @@
 				<header class="page-header">
 					<h1 class="page-title">Souscrire pour cette formation</h1>
 				</header>
-				<br>
+                <br>
+                    <?php if($formation):?>
+                    <?php foreach($formation as $value):?>
 					<?php echo form_open('index.php/welcome/adhere_formation');?>
 						<div class="row">
 							<div class="col-sm-4">
