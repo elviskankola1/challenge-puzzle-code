@@ -61,12 +61,12 @@
                         </div><br><br>
                         <div class="row">
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Entrez votre nom" name="nom" required>
+								<input class="form-control" type="email" placeholder="Entrez votre adresse email" name="nom" required>
 							</div>
                         </div><br><br>
                         <div class="row">
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Entrez votre nom" name="nom" required>
+								<input class="form-control" type="number" placeholder="Entrez votre numero telephonique" name="nom" required>
 							</div>
 						</div>
 						<br><br>
