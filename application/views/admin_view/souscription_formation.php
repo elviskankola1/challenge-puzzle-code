@@ -14,7 +14,7 @@
 				<div class="panel-body">
                     <b>
                         <h5><a href="mailto:<?php echo $value->adresse_user;?>"><?php echo $value->adresse_user;?></a>/<?php echo $value->telephone_user;?></h5>
-                        <p><?php echo $value->formation_user?></p>
+                        <p><?php echo $value->titre_formation?></p>
                     </b>
                     <hr>
                     <a href="<?php echo base_url('index.php/mfo_admin/delete_souscription/').$value->id_user;?>">
@@ -25,7 +25,7 @@
         </div>
         <?php endforeach?>
         <?php else:?>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><b><h1 style="text-align:center;">aucun message!  <img src="<?php echo base_url('assets/images/msg1.png');?>" width="10%"></h1>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><b><h1 style="text-align:center;">aucune Souscription!  <img src="<?php echo base_url('assets/images/M.F.png');?>" width="10%"></h1>
         <?php endif?>
 	</div>
 </body>
