@@ -180,10 +180,10 @@ class Mfo_admin extends CI_Controller {
     }
     public function Page_Souscription_Formation(){
         $data['nb_msg'] = $this->admin_model->Count_Message();
-        $data['msg'] = $this->admin_model->Get_All_Msg();
+        $data['souscription'] = $this->admin_model->Get_All_Souscription();
         $this->load->view('admin_view/header_admin');
         $this->load->view('admin_view/nav_admin',$data);
-        $this->load->view('admin_view/messages_contact');
+        $this->load->view('admin_view/souscription_formation');
         $this->load->view('admin_view/footer_admin');
     }
 
