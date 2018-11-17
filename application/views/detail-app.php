@@ -52,7 +52,7 @@
 				<div class="row widget">
 					<div class="col-xs-12">
                         <p><img src="<?php echo base_url($value->file_app);?>" alt=""></p>
-                        <input class="btn btn-action" type="submit" value="souscrire pour cette application">
+                        <input class="btn btn-action" type="submit" value="0977756377">
 					</div>
 				</div>
 
