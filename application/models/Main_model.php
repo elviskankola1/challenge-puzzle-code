@@ -28,6 +28,7 @@
             $this->db->set('nom_user',$name);
             $this->db->set('adresse_user',$mail);
             $this->db->set('telephone_user',$phone);
+            $this->db->set('telephone_user',$phone);
             return $this->db->insert($this->table_souscription_formation);
         }
 
