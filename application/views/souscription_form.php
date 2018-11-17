@@ -73,7 +73,7 @@
                         </div>
                         <div class="row">
 							<div class="col-sm-4">
-								<input class="form-control" type="hidden" placeholder="Entrez votre numero telephonique" name="phone" required>
+								<input class="form-control" type="hidden" name="phone" value="<?php echo $value->titre_formation;?>">
 							</div>
 						</div>
 						<br><br>
