@@ -65,6 +65,10 @@
 
             return (int) $this->db->count_all_results($this->table_contact);
         }
+        public function Count_Souscription(){
+
+            return (int) $this->db->count_all_results($this->table_souscription_formation);
+        }
 /*========================================================================================================================
                                             ICI LES FONCTIONS QUI RECCUPERENT DAS DB                                                            |
 ========================================================================================================================*/
