@@ -42,13 +42,15 @@
 
 		<ol class="breadcrumb">
 			<li><a href="index.html">Accueil</a></li>
-			<li class="active">Contact</li>
+            <li class="active">Formation</li>
+            <li class="active">Detail-formation</li>
+            <li class="active">Souscription</li>
 		</ol>
 
 		<div class="row">
 			<article class="col-sm-9 maincontent">
 				<header class="page-header">
-					<h1 class="page-title">Contactez nous</h1>
+					<h1 class="page-title">Souscrire pour cette formation</h1>
 				</header>
 				<br>
 					<?php echo form_open('index.php/welcome/contactez_nous');?>
@@ -56,18 +58,18 @@
 							<div class="col-sm-4">
 								<input class="form-control" type="text" placeholder="Entrez votre nom" name="nom" required>
 							</div>
-                        </div>
+                        </div><br><br>
                         <div class="row">
 							<div class="col-sm-4">
 								<input class="form-control" type="text" placeholder="Entrez votre nom" name="nom" required>
 							</div>
-                        </div>
+                        </div><br><br>
                         <div class="row">
 							<div class="col-sm-4">
 								<input class="form-control" type="text" placeholder="Entrez votre nom" name="nom" required>
 							</div>
 						</div>
-						<br>
+						<br><br>
 						<div class="row">
 							<div class="col-sm-6 text-right">
 								<input class="btn btn-action" type="submit" value="Envoyer">
