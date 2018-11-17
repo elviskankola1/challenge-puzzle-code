@@ -61,7 +61,7 @@
                         </div><br><br>
                         <div class="row">
 							<div class="col-sm-4">
-								<input class="form-control" type="email" placeholder="Entrez votre adresse email" name="email" required>
+								<input class="form-control" type="email" placeholder="Entrez votre adresse email" name="mail" required>
 							</div>
                         </div><br><br>
                         <div class="row">
