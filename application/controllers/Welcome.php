@@ -66,9 +66,9 @@ class Welcome extends CI_Controller {
 		$name_user = strip_tags($this->input_>post('nom'));
 		$mail_user = strip_tags($this->input->post('mail'));
 		$mumber_user = strip_tags($this->input->post('phone'));
-		$id =strip_tags($this->input->post('titre'));
+		$titre_formation =strip_tags($this->input->post('titre'));
 		if (filter_var($mail_user,FILTER_VALIDATE_EMAIL == true)) {
-			$this->main_model->Add_User_adhere($name_user,$mail_user,$number_user);
+			$this->main_model->Add_User_adhere($name_user,$mail_user,$number_user,$titre_formation);
 			$this->load->view('succes');
 			$this->load->view('souscription_form');
 		}else{
