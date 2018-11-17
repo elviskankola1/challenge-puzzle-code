@@ -86,7 +86,7 @@
                     <?php echo form_close();?>
                     <?php endforeach?>
                     <?php else:?>
-                        <h1> Vous avez souscrit la formation <?php echo $value->titre_formation;?></h1>
+                        <br><br><br><br><h1 style="text-align:center;"> Vous avez souscrit la formation</h1>
                     <?php endif?>
 			</article>
 			<aside class="col-sm-3 sidebar sidebar-right">
