@@ -68,6 +68,11 @@
 							<div class="col-sm-4">
 								<input class="form-control" type="number" placeholder="Entrez votre numero telephonique" name="phone" required>
 							</div>
+                        </div>
+                        <div class="row">
+							<div class="col-sm-4">
+								<input class="form-control" type="hidden" placeholder="Entrez votre numero telephonique" name="phone" required>
+							</div>
 						</div>
 						<br><br>
 						<div class="row">
