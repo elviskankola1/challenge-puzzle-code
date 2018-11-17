@@ -87,7 +87,7 @@
         }
         public function Get_All_Souscription(){
 
-            return $this->db->select()->order_by('id_user','desc')->get($this->table_contact)->result();
+            return $this->db->select()->order_by('id_user','desc')->get($this->table_souscription_formation)->result();
             
         }
 /*========================================================================================================================
