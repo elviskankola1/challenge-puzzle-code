@@ -55,7 +55,7 @@
                 <br>
                     <?php if($formation):?>
                     <?php foreach($formation as $value):?>
-                    <?php endforeach?>
+                    
 					<?php echo form_open('index.php/welcome/adhere_formation');?>
 						<div class="row">
 							<div class="col-sm-4">
@@ -84,8 +84,9 @@
 							</div>
 						</div>
                     <?php echo form_close();?>
+                    <?php endforeach?>
                     <?php else:?>
-                        <h1> Probleme de connexion</h1>
+                        <h1> Vous avez souscrit la formation <?php echo $value->titre_formation;?></h1>
                     <?php endif?>
 			</article>
 			<aside class="col-sm-3 sidebar sidebar-right">
