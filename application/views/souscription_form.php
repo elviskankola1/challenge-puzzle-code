@@ -53,7 +53,7 @@
 					<h1 class="page-title">Souscrire pour cette formation</h1>
 				</header>
 				<br>
-					<?php echo form_open('index.php/welcome/contactez_nous');?>
+					<?php echo form_open('index.php/welcome/adhere_formation');?>
 						<div class="row">
 							<div class="col-sm-4">
 								<input class="form-control" type="text" placeholder="Entrez votre nom" name="nom" required>
