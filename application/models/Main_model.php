@@ -7,7 +7,7 @@
         private $table_formation = 'mfo_formation';
         private $table_application = 'mfo_application';
         private $table_contact = 'mfo_contact';
-        private $table_souscription_formation = 'mfosouscription';
+        private $table_souscription_formation = 'mfo_souscription';
         function __construct(){
            
             parent::__construct();
