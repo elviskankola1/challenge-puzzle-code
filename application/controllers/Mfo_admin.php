@@ -193,6 +193,11 @@ class Mfo_admin extends CI_Controller {
         $this->admin_model-> Delete_One_Message($id_message);
         redirect($_SERVER['HTTP_REFERER']);
     }
+    public function delete_souscription(){
+        $id_user = $this->uri->segment(3);
+        $this->admin_model-> Delete_One_Souscription($id_user);
+        redirect($_SERVER['HTTP_REFERER']);
+    }
 
 
 }
