@@ -14,7 +14,7 @@
 				<div class="panel-body">
                     <b>
                         <h5><a href="mailto:<?php echo $value->adresse_user;?>"><?php echo $value->adresse_user;?></a>/<?php echo $value->telephone_user;?></h5>
-                        <p><?php echo $value->titre_formation?></p>
+                        <h3><?php echo"   Formation:             ".$value->titre_formation?></h3>
                     </b>
                     <hr>
                     <a href="<?php echo base_url('index.php/mfo_admin/delete_souscription/').$value->id_user;?>">
