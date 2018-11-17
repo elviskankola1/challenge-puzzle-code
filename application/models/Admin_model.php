@@ -13,6 +13,7 @@
         private $table_application = 'mfo_application';
         private $table_blog = 'mfo_blog';
         private $table_contact = 'mfo_contact';
+        private $table_souscription_formation = 'mfo_souscription';
 
         function __construct(){
            
@@ -90,6 +91,11 @@
         public function Delete_One_Message($id){
 
             $query = $this->db->where('id_user',$id)->delete($this->table_contact);
+            return $query; 
+        }
+        public function Delete_One_souscription($id){
+
+            $query = $this->db->where('id_user',$id)->delete($this->table_souscription_formation);
             return $query; 
         }
 
