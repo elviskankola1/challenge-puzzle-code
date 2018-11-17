@@ -66,6 +66,8 @@ class Welcome extends CI_Controller {
 		$mumber_user = strip_tags($this->input->post('phone'));
 		if (filter_var($mail_user,FILTER_VALIDATE_EMAIL == true)) {
 			$this->main_model->Add_User_adhere($name_user,$mail_user,$number_user,$date_accepte);
+			$this->load->view('succes');
+			$this->load->view('souscription_form');
 		}else{
 			$this->load->view('');
 		}
