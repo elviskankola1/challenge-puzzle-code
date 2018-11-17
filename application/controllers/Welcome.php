@@ -70,7 +70,7 @@ class Welcome extends CI_Controller {
 		if (filter_var($mail_user,FILTER_VALIDATE_EMAIL)) {
 			$this->main_model->Add_User_adhere($name_user,$mail_user,$number_user,$titre_formation);
 			$this->load->view('succes');
-			$this->load->view('souscription_form');
+			redirect($_SERVER['HTTP_REFERER']);
 		}else{
 			$this->load->view('');
 		}
