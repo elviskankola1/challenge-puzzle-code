@@ -17,7 +17,7 @@
                         <p><?php echo $value->formation_user?></p>
                     </b>
                     <hr>
-                    <a href="<?php echo base_url('index.php/mfo_admin/delete_message/').$value->id_user;?>">
+                    <a href="<?php echo base_url('index.php/mfo_admin/delete_souscription/').$value->id_user;?>">
                         <img src="<?php echo base_url('assets/images/sup1.png');?>" width="4%">
                     </a>
 				</div>
