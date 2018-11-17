@@ -27,7 +27,6 @@
             $this->db->set('',$name);
             $this->db->set('',$mail);
             $this->db->set('',$phone);
-            $this->db->set('',$date);
             return $this->db->insert($this->table_contact);
         }
 
