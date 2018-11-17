@@ -82,8 +82,9 @@
 								<input class="btn btn-action" type="submit" value="Souscrire">
 							</div>
 						</div>
-					<?php echo form_close();?>
-
+                    <?php echo form_close();?>
+                    <?php endforeach?>
+                    <?php endif?>
 			</article>
 			<aside class="col-sm-3 sidebar sidebar-right">
 
