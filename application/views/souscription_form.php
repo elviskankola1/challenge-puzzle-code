@@ -73,7 +73,7 @@
                         </div>
                         <div class="row">
 							<div class="col-sm-4">
-								<input class="form-control" type="hidden" name="phone" value="<?php echo $value->titre_formation;?>">
+								<input class="form-control" type="hidden" name="titre" value="<?php echo $value->titre_formation;?>">
 							</div>
 						</div>
 						<br><br>
