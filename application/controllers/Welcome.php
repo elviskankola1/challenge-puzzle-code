@@ -19,7 +19,7 @@ class Welcome extends CI_Controller {
 //=========================================================================================================
 	public function souscription_formation(){
 		$id_formation = $this->uri->segment(3);
-		$data['formation'] = $this->main_model->Get_One_Formatio($id_formation);
+		$data['formation'] = $this->main_model->Get_One_Formation($id_formation);
 		$this->load->view('souscription_form',$data);
 	}
 //========================================================================================================
