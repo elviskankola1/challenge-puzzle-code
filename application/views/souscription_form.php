@@ -55,7 +55,6 @@
                 <br>
                     <?php if($formation):?>
                     <?php foreach($formation as $value):?>
-                            <?php $titre = $value->titre_formation;?>
                     <?php endforeach?>
 					<?php echo form_open('index.php/welcome/adhere_formation');?>
 						<div class="row">
@@ -75,7 +74,7 @@
                         </div>
                         <div class="row">
 							<div class="col-sm-4">
-								<input class="form-control" type="hidden" name="titre" value="<?php echo $titre;?>">
+								<input class="form-control" type="hidden" name="titre" value="<?php echo $value->titre_formation;?>">
 							</div>
 						</div>
 						<br><br>
@@ -85,6 +84,8 @@
 							</div>
 						</div>
                     <?php echo form_close();?>
+                    <?php else:?>
+                        <h1> Probleme de connexion</h1>
                     <?php endif?>
 			</article>
 			<aside class="col-sm-3 sidebar sidebar-right">
