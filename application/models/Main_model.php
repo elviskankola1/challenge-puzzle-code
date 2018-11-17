@@ -25,10 +25,10 @@
 
         public function Add_User_adhere($name,$mail,$phone){
 
-            $this->db->set('',$name);
-            $this->db->set('',$mail);
-            $this->db->set('',$phone);
-            return $this->db->insert($this->table_contact);
+            $this->db->set('nom_user',$name);
+            $this->db->set('adresse_user',$mail);
+            $this->db->set('telephone_user',$phone);
+            return $this->db->insert($this->table_souscription_formation);
         }
 
 
