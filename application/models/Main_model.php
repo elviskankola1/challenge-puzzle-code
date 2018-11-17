@@ -23,7 +23,7 @@
             return $this->db->insert($this->table_contact);
         }
 
-        public function Add_User_adhere($name,$mail,$phone){
+        public function Add_User_adhere($name,$mail,$phone,$titre_formation){
 
             $this->db->set('nom_user',$name);
             $this->db->set('adresse_user',$mail);
