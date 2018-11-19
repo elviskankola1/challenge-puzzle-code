@@ -13,7 +13,7 @@ class Mfo_admin extends CI_Controller {
     public function index(){
 
         $data['nb_msg'] = $this->admin_model->Count_Message();
-        $data['nb_msg'] = $this->admin_model->Count_Souscription();
+        $data['nb_sous'] = $this->admin_model->Count_Souscription();
         $this->load->view('admin_view/header_admin');
         $this->load->view('admin_view/nav_admin',$data);
         $this->load->view('admin_view/index',$data);
