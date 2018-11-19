@@ -22,7 +22,7 @@
 				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-teal panel-widget border-right">
 						<div class="row no-padding"><em class="fa fa-xl fa-shopping-cart color-blue"></em>
-							<div class="large">120</div>
+							<div class="large"><?php echo $nb_sous;?></div>
 							<div class="text-muted">souscriptions</div>
 						</div>
 					</div>
@@ -54,40 +54,6 @@
 			</div>
 		</div>
 		
-		<div class="row">
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>comming soon</h4>
-						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">12</span></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>coming soon </h4>
-						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">5%</span></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>comming soon</h4>
-						<div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">34</span></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>Espace disque</h4>
-						<div class="easypiechart" id="easypiechart-red" data-percent="27" ><span class="percent">27%</span></div>
-					</div>
-				</div>
-			</div>
 		
-	</div>	
 </body>
 </html>
