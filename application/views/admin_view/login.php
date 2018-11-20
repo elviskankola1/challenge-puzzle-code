@@ -13,16 +13,11 @@
                                         <input type="text" class="form-control" placeholder="entez un titre" name="titre">
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <div  class="input-group" style="width:60%;" >
-                                        <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-                                        <input type="file" class="form-control" name="userfile">
-                                    </div>
-                                </div>
+
                                 <div class="form-group" >
                                     <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-                                        <textarea cols="65" rows="5" placeholder="  entrez la description" width="100%" name="description"></textarea>
+                                    <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
+                                        <input type="text" class="form-control" placeholder="entez un titre" name="titre">
                                     </div>
                                 </div>
 							<button class="btn btn-primary">Publier</button></fieldset>
