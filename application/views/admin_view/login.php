@@ -10,7 +10,7 @@
                     <div class="form-group">
                                     <div class="input-group"  style="width:60%;">
                                         <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-                                        <input type="text" class="form-control" placeholder="entrez un votre login" name="login">
+                                        <input type="text" class="form-control" placeholder="entrez votre login" name="login">
                                     </div>
                                 </div>
 
