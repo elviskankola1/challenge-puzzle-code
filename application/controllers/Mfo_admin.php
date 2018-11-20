@@ -11,7 +11,6 @@ class Mfo_admin extends CI_Controller {
 
     public function index(){
         $this->load->view('admin_view/header_admin');
-        $this->load->view('admin_view/nav_admin');
         $this->load->view('admin_view/login');
     }
     public function Main_Panel(){
