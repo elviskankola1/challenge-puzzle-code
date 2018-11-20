@@ -4,7 +4,7 @@
 	<div class="row"><br>
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4"  style="width:55%; left:0%;">
 			<div class="login-panel panel panel-default" style="width:100%;">
-				<div class="panel-heading">Formulaire d'ajout</div>
+				<div class="panel-heading">Login admin </div>
 				<div class="panel-body">
 					<?php echo form_open_multipart('index.php/mfo_admin/Add_Application_In_database');?>
                     <div class="form-group">
