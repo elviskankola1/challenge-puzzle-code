@@ -111,7 +111,7 @@
         
         public function login_admin($login,$pwd){
 
-            $query = $this->db->where(['login'=>$login,'pwd'=>$pwd])->get($this->table_login);
+            $query = $this->db->where(['pwd'=>$pwd,'login'=>$login])->get($this->table_login);
             return $quety;
         }
 
