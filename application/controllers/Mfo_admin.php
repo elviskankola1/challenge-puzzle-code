@@ -141,13 +141,6 @@ class Mfo_admin extends CI_Controller {
                                             ICI LES FONCTIONS REPRESENTANT DES PAGES                                                           |
 ========================================================================================================================*/
 
-    public function Login(){
-
-        $this->load->view('admin_view/header_admin');
-        $this->load->view('admin_view/adminlogin');
-        $this->load->view('admin_view/footer_admin');
-    }
-//-----------------------------------------------------------------
     public function Page_Add_App(){
 
         $data['nb_msg'] = $this->admin_model->Count_Message();
