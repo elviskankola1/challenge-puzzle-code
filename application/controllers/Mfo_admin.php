@@ -196,5 +196,22 @@ class Mfo_admin extends CI_Controller {
         redirect($_SERVER['HTTP_REFERER']);
     }
 
+    public function login_in(){
+
+        $login = strip_tags($this->input->post('login'));
+        $pwd = strip_tags($this->input->post('pwd'));
+        $admin = $this->admin_model->Login_Admin($login,$pwd);
+        if($admin){
+            $data['nb_msg'] = $this->admin_model->Count_Message();
+            $data['nb_sous'] = $this->admin_model->Count_Souscription();
+            $this->load->view('admin_view/header_admin');
+            $this->load->view('admin_view/nav_admin',$data);
+            $this->load->view('admin_view/index',$data);
+            $this->load->view('admin_view/footer_admin');
+        }else{
+            redirect($SERVER['HTTP_REFERER']);
+        }
+    }
+
 
 }
