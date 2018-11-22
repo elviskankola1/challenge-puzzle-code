@@ -107,6 +107,12 @@
             $query = $this->db->where('id_user',$id)->delete($this->table_souscription_formation);
             return $query; 
         }
+        
+        public function login_admin($login,$pwd){
+
+            $query = $this->db->where(['login'=>$login,'pwd'=>$pwd])->get('votre table ici');
+            return $quety;
+        }
 
 
     }
