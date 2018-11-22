@@ -11,7 +11,21 @@ class Mfo_admin extends CI_Controller {
     }
 
     public function index(){
-        
+
+        $login = strip_tags($this->input->post('login'));
+        $pwd = strip_tags($this->input->post('password'));
+        $admin = $this->admin_model->Login_Admin($login,$pwd);
+        if($admin){
+
+            $_SESSION['nb_msg'] = $this->admin_model->Count_Message();
+            $_SESSION['nb_sous'] = $this->admin_model->Count_Souscription();
+            $this->load->view('admin_view/header_admin');
+            $this->load->view('admin_view/nav_admin',$_SESSION);
+            $this->load->view('admin_view/index',$_SESSION);
+            $this->load->view('admin_view/footer_admin');
+        }else{
+            echo "cooooool";
+        }
     }
     public function Main_Panel(){
 
