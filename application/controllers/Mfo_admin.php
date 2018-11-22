@@ -210,7 +210,7 @@ class Mfo_admin extends CI_Controller {
             $this->load->view('admin_view/index',$_SESSION);
             $this->load->view('admin_view/footer_admin');
         }else{
-            redirect('index.php/mfo_admin/');
+            echo "else";
         }
     }
 
