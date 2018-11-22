@@ -196,7 +196,7 @@ class Mfo_admin extends CI_Controller {
         redirect($_SERVER['HTTP_REFERER']);
     }
 
-    public function login_in(){
+    public function Login_In(){
 
         $login = strip_tags($this->input->post('login'));
         $pwd = strip_tags($this->input->post('password'));
