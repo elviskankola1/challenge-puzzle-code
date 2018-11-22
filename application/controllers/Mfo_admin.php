@@ -209,7 +209,7 @@ class Mfo_admin extends CI_Controller {
             $this->load->view('admin_view/index',$data);
             $this->load->view('admin_view/footer_admin');
         }else{
-            redirect($SERVER['HTTP_REFERER']);
+            redirect($_SERVER['HTTP_REFERER']);
         }
     }
 
