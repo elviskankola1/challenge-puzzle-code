@@ -210,13 +210,13 @@ class Mfo_admin extends CI_Controller {
             $this->load->view('admin_view/index',$_SESSION);
             $this->load->view('admin_view/footer_admin');
         }else{
-            redirect($_SERVER['HTTP_REFERER']);
+            $this->load->view('login');
         }
     }
 
     public function deconnexion(){
         
-        session_destroy()
+        session_destroy();
         $this->index();
     }
 
