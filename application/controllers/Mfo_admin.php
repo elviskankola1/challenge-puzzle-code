@@ -202,15 +202,22 @@ class Mfo_admin extends CI_Controller {
         $pwd = strip_tags($this->input->post('password'));
         $admin = $this->admin_model->Login_Admin($login,$pwd);
         if($admin){
-            $data['nb_msg'] = $this->admin_model->Count_Message();
-            $data['nb_sous'] = $this->admin_model->Count_Souscription();
+            $_SESSION['nom'] =  $login;
+            $_SESSION['nb_msg'] = $this->admin_model->Count_Message();
+            $_SESSION['nb_sous'] = $this->admin_model->Count_Souscription();
             $this->load->view('admin_view/header_admin');
-            $this->load->view('admin_view/nav_admin',$data);
-            $this->load->view('admin_view/index',$data);
+            $this->load->view('admin_view/nav_admin',$_SESSION);
+            $this->load->view('admin_view/index',$_SESSION);
             $this->load->view('admin_view/footer_admin');
         }else{
             redirect($_SERVER['HTTP_REFERER']);
         }
+    }
+
+    public function deconnexion(){
+        
+        session_destroy()
+        $this->index();
     }
 
 
