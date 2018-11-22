@@ -199,7 +199,7 @@ class Mfo_admin extends CI_Controller {
     public function login_in(){
 
         $login = strip_tags($this->input->post('login'));
-        $pwd = strip_tags($this->input->post('pwd'));
+        $pwd = strip_tags($this->input->post('password'));
         $admin = $this->admin_model->Login_Admin($login,$pwd);
         if($admin){
             $data['nb_msg'] = $this->admin_model->Count_Message();
