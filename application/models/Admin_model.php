@@ -14,6 +14,7 @@
         private $table_blog = 'mfo_blog';
         private $table_contact = 'mfo_contact';
         private $table_souscription_formation = 'mfo_souscription';
+        private $table_login = "mfo_login";
 
         function __construct(){
            
@@ -110,7 +111,7 @@
         
         public function login_admin($login,$pwd){
 
-            $query = $this->db->where(['login'=>$login,'pwd'=>$pwd])->get('votre table ici');
+            $query = $this->db->where(['login'=>$login,'pwd'=>$pwd])->get($this->table_login);
             return $quety;
         }
 
