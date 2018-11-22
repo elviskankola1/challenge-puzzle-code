@@ -19,8 +19,9 @@
                             </div>
                         </div>
                         <fieldset><button class="btn btn-primary">Publier</button></fieldset>
-					<?php echo form_close();?>
                     </div>
+					<?php echo form_close();?>
+                    
 				</div>
 			</div>
 		</div>
