@@ -18,9 +18,7 @@
                                 <input type="text" class="form-control" placeholder="entrez votre mot de passe" name="password">
                             </div>
                         </div>
-
-                                
-                                <fieldset><button class="btn btn-primary">Publier</button></fieldset>
+                        <fieldset><button class="btn btn-primary">Publier</button></fieldset>
 					<?php echo form_close();?>
                     </div>
 				</div>
